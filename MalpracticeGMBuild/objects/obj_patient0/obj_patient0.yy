@@ -3,12 +3,14 @@
   "%Name":"obj_patient0",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_patient0",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"name_first","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Nadia",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"name_last","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Bisnez",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"current_prescription","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_alprazolam",},
   ],
   "parent":{
     "name":"Objects",
