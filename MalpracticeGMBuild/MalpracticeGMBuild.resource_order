@@ -16,5 +16,7 @@
     {"name":"Tile Sets","order":2,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":8,"path":"folders/Timelines.yy",},
   ],
-  "ResourceOrderSettings":[],
+  "ResourceOrderSettings":[
+    {"name":"obj_patient_parent","order":1,"path":"objects/obj_patient_parent/obj_patient_parent.yy",},
+  ],
 }
