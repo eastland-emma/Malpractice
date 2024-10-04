@@ -29,7 +29,7 @@
         "\"dizzyness\"",
         "\"fatigue\"",
         "\"impaired coordination\"",
-      ],"multiselect":false,"name":"symptoms_caused","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"drowsiness\"","varType":6,},
+      ],"multiselect":false,"name":"symptoms_caused","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"dizzyness\"","varType":6,},
     {"$GMObjectProperty":"v1","%Name":"symptoms_treated","filters":[],"listItems":[
         "\"anxiety\"",
         "\"panic\"",

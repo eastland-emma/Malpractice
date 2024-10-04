@@ -1,16 +1,14 @@
 {
   "$GMObject":"",
   "%Name":"obj_patient0",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "eventList":[],
   "managed":true,
   "name":"obj_patient0",
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"name_first","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Nadia",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"name_last","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Bisnez",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"current_prescription","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_alprazolam",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"current_prescription","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resource":{"name":"obj_alprazolam","path":"objects/obj_alprazolam/obj_alprazolam.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_alprazolam",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"previous_prescriptions","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"most recent medication\"",},
   ],
   "parent":{
     "name":"Objects",
@@ -27,17 +25,25 @@
   "physicsGroup":1,
   "physicsKinematic":false,
   "physicsLinearDamping":0.1,
-  "physicsObject":false,
+  "physicsObject":true,
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":1,
-  "physicsShapePoints":[],
+  "physicsShapePoints":[
+    {"x":0.0,"y":0.0,},
+    {"x":1080.0,"y":0.0,},
+    {"x":1080.0,"y":1080.0,},
+    {"x":0.0,"y":1080.0,},
+  ],
   "physicsStartAwake":true,
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_patient0",
+    "path":"sprites/spr_patient0/spr_patient0.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
