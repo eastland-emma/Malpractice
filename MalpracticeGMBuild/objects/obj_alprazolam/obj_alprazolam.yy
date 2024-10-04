@@ -1,15 +1,22 @@
 {
   "$GMObject":"",
   "%Name":"obj_alprazolam",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_alprazolam",
-  "overriddenProperties":[],
+  "overriddenProperties":[
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_medication","path":"objects/obj_medication/obj_medication.yy",},"propertyId":{"name":"medication_name","path":"objects/obj_medication/obj_medication.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"alprazolam\"",},
+  ],
   "parent":{
     "name":"Objects",
     "path":"folders/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_medication",
+    "path":"objects/obj_medication/obj_medication.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -23,18 +30,7 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[
-    {"$GMObjectProperty":"v1","%Name":"symptoms_caused","filters":[],"listItems":[
-        "\"drowsiness\"",
-        "\"dizzyness\"",
-        "\"fatigue\"",
-        "\"impaired coordination\"",
-      ],"multiselect":false,"name":"symptoms_caused","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"dizzyness\"","varType":6,},
-    {"$GMObjectProperty":"v1","%Name":"symptoms_treated","filters":[],"listItems":[
-        "\"anxiety\"",
-        "\"panic\"",
-      ],"multiselect":false,"name":"symptoms_treated","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"anxiety\"","varType":6,},
-  ],
+  "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
