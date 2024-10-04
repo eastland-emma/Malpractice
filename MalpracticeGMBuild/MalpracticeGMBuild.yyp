@@ -35,6 +35,7 @@
   "name":"MalpracticeGMBuild",
   "resources":[
     {"id":{"name":"obj_alprazolam","path":"objects/obj_alprazolam/obj_alprazolam.yy",},},
+    {"id":{"name":"obj_medication","path":"objects/obj_medication/obj_medication.yy",},},
     {"id":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},},
     {"id":{"name":"obj_patient0","path":"objects/obj_patient0/obj_patient0.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
