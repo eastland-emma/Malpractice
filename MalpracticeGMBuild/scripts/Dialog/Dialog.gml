@@ -5,16 +5,16 @@ function Dialogue() constructor
 {
 	queued_dialog = [];
 	
-	add = function(_character_name, _text)
+	add = function( _text)
 	{
-		array_push(queued_dialog,
-			{speaker: _character_name,
-			 text: _text});
+		show_debug_message(_text);
+		array_push(queued_dialog,_text);
 	}
 	
 	pop = function()
 	{
 		var _temp = array_first(queued_dialog);
+		show_debug_message(_temp);
 		array_delete(queued_dialog, 0, 1);
 		return _temp;
 	}

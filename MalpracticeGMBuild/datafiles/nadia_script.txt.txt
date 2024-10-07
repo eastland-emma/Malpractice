@@ -1,0 +1,2 @@
+Nadia: This is the first line of nadia's script
+Player: This is the second line of nadia's script

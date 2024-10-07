@@ -26,7 +26,9 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Timelines","folderPath":"folders/Timelines.yy","name":"Timelines","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"nadia_script.txt.txt","CopyToMask":-1,"filePath":"datafiles","name":"nadia_script.txt.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
@@ -37,6 +39,7 @@
     {"id":{"name":"fnt_Arial","path":"fonts/fnt_Arial/fnt_Arial.yy",},},
     {"id":{"name":"obj_alprazolam","path":"objects/obj_alprazolam/obj_alprazolam.yy",},},
     {"id":{"name":"obj_medication","path":"objects/obj_medication/obj_medication.yy",},},
+    {"id":{"name":"obj_nadia_dialogue","path":"objects/obj_nadia_dialogue/obj_nadia_dialogue.yy",},},
     {"id":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},},
     {"id":{"name":"obj_patient0","path":"objects/obj_patient0/obj_patient0.yy",},},
     {"id":{"name":"obj_text_box","path":"objects/obj_text_box/obj_text_box.yy",},},
