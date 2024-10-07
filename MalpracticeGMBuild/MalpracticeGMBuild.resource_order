@@ -20,5 +20,6 @@
     {"name":"obj_alprazolam","order":3,"path":"objects/obj_alprazolam/obj_alprazolam.yy",},
     {"name":"obj_medication","order":4,"path":"objects/obj_medication/obj_medication.yy",},
     {"name":"obj_patient_parent","order":1,"path":"objects/obj_patient_parent/obj_patient_parent.yy",},
+    {"name":"obj_text_box","order":5,"path":"objects/obj_text_box/obj_text_box.yy",},
   ],
 }
