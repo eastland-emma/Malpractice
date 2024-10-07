@@ -39,7 +39,7 @@
     {"id":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},},
     {"id":{"name":"obj_patient0","path":"objects/obj_patient0/obj_patient0.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-    {"id":{"name":"scr_nadia1st","path":"scripts/scr_nadia1st/scr_nadia1st.yy",},},
+    {"id":{"name":"Dialog","path":"scripts/Dialog/Dialog.yy",},},
     {"id":{"name":"spr_patient0","path":"sprites/spr_patient0/spr_patient0.yy",},},
   ],
   "resourceType":"GMProject",

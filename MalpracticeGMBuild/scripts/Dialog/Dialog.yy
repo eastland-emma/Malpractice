@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"scr_nadia1st",
+  "%Name":"Dialog",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"scr_nadia1st",
+  "name":"Dialog",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",
