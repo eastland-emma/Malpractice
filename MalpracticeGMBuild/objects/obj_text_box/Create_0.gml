@@ -1,3 +1,15 @@
+global.dialogue = new Dialogue();
+text = buffer_load(global.script_name);
+strings = string_split(buffer_read(text,buffer_string), "\n");
+file_find_close();
+lines = array_length(strings);
+
+for(var i = 0; i < lines; i++)
+{
+	global.dialogue.add(strings[i]);
+}
+current_dialogue = global.dialogue.pop();
+
 
 //#########################################################
  
