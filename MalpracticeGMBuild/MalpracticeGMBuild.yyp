@@ -45,6 +45,7 @@
     {"id":{"name":"obj_text_box","path":"objects/obj_text_box/obj_text_box.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Dialog","path":"scripts/Dialog/Dialog.yy",},},
+    {"id":{"name":"Prescription_Manager","path":"scripts/Prescription_Manager/Prescription_Manager.yy",},},
     {"id":{"name":"spr_patient0","path":"sprites/spr_patient0/spr_patient0.yy",},},
   ],
   "resourceType":"GMProject",

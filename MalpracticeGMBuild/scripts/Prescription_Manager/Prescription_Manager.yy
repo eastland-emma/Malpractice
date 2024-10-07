@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"Prescription_Manager",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"Prescription_Manager",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

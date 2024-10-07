@@ -5,5 +5,5 @@ if (global.dialogue.count() > 0){
 	current_dialogue = global.dialogue.pop();
 }
 else{
-	//instance_destroy(self);
+	instance_destroy(self);
 }
