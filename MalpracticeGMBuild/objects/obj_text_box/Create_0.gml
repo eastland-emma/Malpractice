@@ -3,6 +3,29 @@ text = buffer_load(global.script_name);
 strings = string_split(buffer_read(text,buffer_string), "\n");
 file_find_close();
 lines = array_length(strings);
+x = 50;
+y = 50;
+
+for(var i = 0; i < lines; i++)
+{
+	var line_count = 0;
+	words = string_split(strings[i], " ");
+	show_debug_message(words[0]);
+	var textbox = "";
+	for(var j = 0; j < array_length(words); j++)
+	{
+		var word = words[j];
+		if(string_length(word) + line_count > max_line_size)
+		{
+			textbox += "\n";
+			line_count = 0;
+		}
+		line_count += string_length(word) + 1;
+		textbox += word + " ";
+	}
+
+	strings[i] = textbox;
+}
 
 for(var i = 0; i < lines; i++)
 {

@@ -11,9 +11,5 @@ function prescribe(patient, medication){
     patient.current_prescription = medication;
 }
 
-function enter_scene(){
-
-}
-
 direction = 330;
 speed = 5;

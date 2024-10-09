@@ -27,11 +27,16 @@
   "physicsShape":1,
   "physicsShapePoints":[],
   "physicsStartAwake":true,
-  "properties":[],
+  "properties":[
+    {"$GMObjectProperty":"v1","%Name":"max_line_size","filters":[],"listItems":[],"multiselect":false,"name":"max_line_size","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"25","varType":1,},
+  ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"text_box",
+    "path":"sprites/text_box/text_box.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

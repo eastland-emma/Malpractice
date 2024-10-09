@@ -22,5 +22,10 @@ oscillating_count++;
 //if(direction > 390)
 //	direction = 330;
 	
-if (x >= 700 && speed > 0)
+if (x >= 900 && speed > 0)
 	speed -= .05;
+	
+if (speed == 0 && spawn_textbox){
+	spawn_textbox = false;
+	instance_create_depth(0,0,0, obj_text_box);
+}

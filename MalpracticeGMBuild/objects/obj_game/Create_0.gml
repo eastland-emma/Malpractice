@@ -2,8 +2,6 @@
 // You can write your code in this editor
 global.script_name = "nadia_script.txt";
 
-instance_create_depth(0,0,0, obj_text_box);
-
 global.prescription_manager = new PrescriptionManager();
 
-instance_create_depth(0, 900, 100, obj_patient0);
+instance_create_depth(0, 800, 100, obj_patient0);

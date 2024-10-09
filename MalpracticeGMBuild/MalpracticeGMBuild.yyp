@@ -55,6 +55,7 @@
     {"id":{"name":"spr_alprazolam","path":"sprites/spr_alprazolam/spr_alprazolam.yy",},},
     {"id":{"name":"spr_patient0","path":"sprites/spr_patient0/spr_patient0.yy",},},
     {"id":{"name":"Sprite4","path":"sprites/Sprite4/Sprite4.yy",},},
+    {"id":{"name":"text_box","path":"sprites/text_box/text_box.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

@@ -31,5 +31,6 @@
     {"name":"office_background","order":3,"path":"sprites/office_background/office_background.yy",},
     {"name":"spr_alprazolam","order":1,"path":"sprites/spr_alprazolam/spr_alprazolam.yy",},
     {"name":"Sprite4","order":10,"path":"sprites/Sprite4/Sprite4.yy",},
+    {"name":"text_box","order":5,"path":"sprites/text_box/text_box.yy",},
   ],
 }
