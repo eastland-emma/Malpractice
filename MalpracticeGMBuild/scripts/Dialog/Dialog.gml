@@ -7,14 +7,12 @@ function Dialogue() constructor
 	
 	add = function( _text)
 	{
-		show_debug_message(_text);
 		array_push(queued_dialog,_text);
 	}
 	
 	pop = function()
 	{
 		var _temp = array_first(queued_dialog);
-		show_debug_message(_temp);
 		array_delete(queued_dialog, 0, 1);
 		return _temp;
 	}
