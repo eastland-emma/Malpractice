@@ -1,6 +1,5 @@
 /// @description Insert description here
 // You can write your code in this editor
-previous_prescriptions = new ds_queue();
 
 ///@description 
 function prescribe(patient, medication){
@@ -11,3 +10,10 @@ function prescribe(patient, medication){
 
     patient.current_prescription = medication;
 }
+
+function enter_scene(){
+
+}
+
+direction = 330;
+speed = 5;

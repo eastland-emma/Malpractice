@@ -11,7 +11,7 @@ function PrescriptionManager()constructor{
 	prescribe = function(_patient, _medication){
 		show_debug_message("here");
 		array_push(patients[_patient], _medication);
-		show_debug_message("Prescribed: "+_medication.medication_name());
+		show_debug_message("Prescribed: "+_medication.medication_name);
 	}
 	
 	current_prescription = function(_patient){

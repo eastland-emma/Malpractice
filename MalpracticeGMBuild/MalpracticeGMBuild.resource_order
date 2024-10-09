@@ -23,9 +23,13 @@
     {"name":"obj_med_parent","order":4,"path":"objects/obj_med_parent/obj_med_parent.yy",},
     {"name":"obj_patient_parent","order":1,"path":"objects/obj_patient_parent/obj_patient_parent.yy",},
     {"name":"obj_text_box","order":5,"path":"objects/obj_text_box/obj_text_box.yy",},
+    {"name":"test_button","order":9,"path":"objects/test_button/test_button.yy",},
     {"name":"Medicine_Cabinet","order":1,"path":"rooms/Medicine_Cabinet/Medicine_Cabinet.yy",},
     {"name":"Prescription_Manager","order":1,"path":"scripts/Prescription_Manager/Prescription_Manager.yy",},
+    {"name":"countertop","order":4,"path":"sprites/countertop/countertop.yy",},
     {"name":"medicine_background","order":2,"path":"sprites/medicine_background/medicine_background.yy",},
+    {"name":"office_background","order":3,"path":"sprites/office_background/office_background.yy",},
     {"name":"spr_alprazolam","order":1,"path":"sprites/spr_alprazolam/spr_alprazolam.yy",},
+    {"name":"Sprite4","order":10,"path":"sprites/Sprite4/Sprite4.yy",},
   ],
 }
