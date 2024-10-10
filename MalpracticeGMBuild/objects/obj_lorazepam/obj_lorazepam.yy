@@ -35,7 +35,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_lorazepam",
+    "path":"sprites/spr_lorazepam/spr_lorazepam.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

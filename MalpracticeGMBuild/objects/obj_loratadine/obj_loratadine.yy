@@ -35,7 +35,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_loratadine",
+    "path":"sprites/spr_loratadine/spr_loratadine.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

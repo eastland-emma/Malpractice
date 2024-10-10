@@ -35,7 +35,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_cetrizine",
+    "path":"sprites/spr_cetrizine/spr_cetrizine.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
