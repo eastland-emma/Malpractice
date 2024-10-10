@@ -7,12 +7,11 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"name_first","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Nadia",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"name_last","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Bisnez",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"current_prescription","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resource":{"name":"obj_alprazolam","path":"objects/obj_alprazolam/obj_alprazolam.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"obj_alprazolam",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"previous_prescriptions","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"most recent medication\"",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"current_symptom","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"anxiety\"",},
   ],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Patients",
+    "path":"folders/Objects/Patients.yy",
   },
   "parentObjectId":{
     "name":"obj_patient_parent",
