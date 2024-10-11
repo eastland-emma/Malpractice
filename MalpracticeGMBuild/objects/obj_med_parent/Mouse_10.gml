@@ -1,4 +1,5 @@
 /// @description Hover behavior for medications
-// You can write your code in this editor
+
+//Display medication info to screen
 global.med_info = {name: medication_name,
 				   info: medication_info};
