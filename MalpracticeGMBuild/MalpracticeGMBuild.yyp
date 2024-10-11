@@ -41,6 +41,7 @@
   },
   "name":"MalpracticeGMBuild",
   "resources":[
+    {"id":{"name":"fnt_main_h2","path":"fonts/fnt_main_h2/fnt_main_h2.yy",},},
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},},
     {"id":{"name":"obj_alprazolam","path":"objects/obj_alprazolam/obj_alprazolam.yy",},},
     {"id":{"name":"obj_arrow","path":"objects/obj_arrow/obj_arrow.yy",},},
