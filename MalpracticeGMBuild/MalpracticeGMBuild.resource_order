@@ -24,7 +24,6 @@
   "ResourceOrderSettings":[
     {"name":"obj_arrow","order":9,"path":"objects/obj_arrow/obj_arrow.yy",},
     {"name":"obj_cetirizine","order":4,"path":"objects/obj_cetirizine/obj_cetirizine.yy",},
-    {"name":"obj_computer","order":13,"path":"objects/obj_computer/obj_computer.yy",},
     {"name":"obj_enobosarm","order":8,"path":"objects/obj_enobosarm/obj_enobosarm.yy",},
     {"name":"obj_escitalopram","order":1,"path":"objects/obj_escitalopram/obj_escitalopram.yy",},
     {"name":"obj_game","order":7,"path":"objects/obj_game/obj_game.yy",},
@@ -46,7 +45,6 @@
     {"name":"office_background","order":2,"path":"sprites/office_background/office_background.yy",},
     {"name":"spr_arrow","order":4,"path":"sprites/spr_arrow/spr_arrow.yy",},
     {"name":"spr_cetrizine","order":2,"path":"sprites/spr_cetrizine/spr_cetrizine.yy",},
-    {"name":"spr_computer","order":3,"path":"sprites/spr_computer/spr_computer.yy",},
     {"name":"spr_enobosarm","order":9,"path":"sprites/spr_enobosarm/spr_enobosarm.yy",},
     {"name":"spr_escitalopram","order":1,"path":"sprites/spr_escitalopram/spr_escitalopram.yy",},
     {"name":"spr_ligandrol","order":11,"path":"sprites/spr_ligandrol/spr_ligandrol.yy",},

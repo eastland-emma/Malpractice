@@ -34,7 +34,7 @@
     {"$GMObjectProperty":"v1","%Name":"is_up","filters":[],"listItems":[],"multiselect":false,"name":"is_up","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"oscillating_count","filters":[],"listItems":[],"multiselect":false,"name":"oscillating_count","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":1,},
     {"$GMObjectProperty":"v1","%Name":"spawn_textbox","filters":[],"listItems":[],"multiselect":false,"name":"spawn_textbox","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"True","varType":3,},
-    {"$GMObjectProperty":"v1","%Name":"patient_id","filters":[],"listItems":[],"multiselect":false,"name":"patient_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"patient_id","filters":[],"listItems":[],"multiselect":false,"name":"patient_id","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":0,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
