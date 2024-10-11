@@ -23,7 +23,7 @@ function spawn_medications(_selected)
 	{
 		instance_create_depth(_x, _y, 1, _selected[i]);
 		_x += 150;
-		if(_x >= 601)
+		if(_x >= 801)
 		{
 			_x =200;
 			_y += 200;
