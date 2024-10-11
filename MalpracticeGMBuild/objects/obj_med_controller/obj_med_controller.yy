@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"text_box",
+    "path":"sprites/text_box/text_box.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }
