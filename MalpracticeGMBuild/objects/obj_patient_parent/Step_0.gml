@@ -29,3 +29,9 @@ if (speed == 0 && spawn_textbox){
 	spawn_textbox = false;
 	instance_create_depth(0,0,0, obj_text_box);
 }
+if(room != room_first)
+{
+	visible=false;
+}
+else
+visible = true;

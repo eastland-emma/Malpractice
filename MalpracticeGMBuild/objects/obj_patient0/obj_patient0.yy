@@ -8,6 +8,7 @@
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"name_first","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Nadia",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"name_last","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Bisnez",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"current_symptom","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"anxiety\"",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_patient_parent","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"propertyId":{"name":"patient_id","path":"objects/obj_patient_parent/obj_patient_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
   ],
   "parent":{
     "name":"Patients",

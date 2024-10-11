@@ -1,7 +1,9 @@
 /// @description Insert description here
-// You can write your code in this editor
+// Set script to the intro one- other objects will set this script to their own scripts as the current script finishes
 global.script_name = "nadia_script.txt";
-
+// Create a prescription manager to track everyones current and past prescriptions
 global.prescription_manager = new PrescriptionManager();
-
-instance_create_depth(0, 800, 100, obj_patient0);
+// Create a global array of patients so we refer to the same one every time
+global.patients = [];
+// Create a nadia instance and place it into an array so we can control it 
+array_push(global.patients,instance_create_depth(0, 800, 100, obj_patient0));
