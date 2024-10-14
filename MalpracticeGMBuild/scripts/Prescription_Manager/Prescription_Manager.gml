@@ -23,14 +23,34 @@ function PrescriptionManager()constructor{
 	//Accept the medication, give the player feedback and get a new symptom set up
 	accept_medication = function(_patient_obj)
 	{
+		
 		//get the current_medication for this patient
 		_med = current_prescription(_patient_obj.patient_id);
+		previous_symptom = _patient_obj.current_symptom;
+		status =check_treatment_status(_patient_obj.patient_id);
 		//Set new symptom
-		_patient_obj.current_symptom = _med.causes_symptoms[irandom(array_length(_med.causes_symptoms)-1)];
+		if(status)
+		{
+			_patient_obj.current_symptom = _med.causes_symptoms[irandom(array_length(_med.causes_symptoms)-1)];
+			global.textbox.dialogue.add(_med.medication_name + ", huh?\nI guess I'll give it\na try.");
+		}
+		else
+		{
+			global.textbox.dialogue.add("Does "+ _med.medication_name + "\neven treat "+previous_symptom+"?\nMaybe I should\nsee someone else.");
 		//debug only
 		show_debug_message(_patient_obj.name_first+"'s current symptom is "+_patient_obj.current_symptom);
+		}
 		
 		//Have the character comment on the prescription
-		global.textbox.dialogue.add(_med.medication_name + ", huh?\nI guess I'll give it\na try.");
+		
 	}
+	
+	//Check treatment status. 1 if the symptom is treated by the most recently described drug. 
+	check_treatment_status = function(_patient_id)
+	{
+		_drug_prescribed = current_prescription(_patient_id);
+		patient_symptom = global.patients[_patient_id].current_symptom;
+		return array_contains(_drug_prescribed.treats_symptoms, patient_symptom);
+	}
+	//Check history of dependence
 }
