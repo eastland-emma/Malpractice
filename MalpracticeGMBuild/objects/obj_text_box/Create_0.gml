@@ -3,8 +3,8 @@ text = buffer_load(global.script_name);
 strings = string_split(buffer_read(text,buffer_string), "\n");
 file_find_close();
 lines = array_length(strings);
-x = 50;
-y = 50;
+x = 60;
+y = 60;
 
 for(var i = 0; i < lines; i++)
 {

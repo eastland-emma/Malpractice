@@ -15,6 +15,7 @@
     {"name":"Shaders","order":6,"path":"folders/Shaders.yy",},
     {"name":"Sounds","order":3,"path":"folders/Sounds.yy",},
     {"name":"Sprites","order":1,"path":"folders/Sprites.yy",},
+    {"name":"GUI","order":5,"path":"folders/Sprites/GUI.yy",},
     {"name":"Medications","order":3,"path":"folders/Sprites/Medications.yy",},
     {"name":"Patients","order":2,"path":"folders/Sprites/Patients.yy",},
     {"name":"SetPieces","order":1,"path":"folders/Sprites/SetPieces.yy",},
@@ -44,7 +45,6 @@
     {"name":"Prescription_Manager","order":1,"path":"scripts/Prescription_Manager/Prescription_Manager.yy",},
     {"name":"medicine_background","order":1,"path":"sprites/medicine_background/medicine_background.yy",},
     {"name":"office_background","order":2,"path":"sprites/office_background/office_background.yy",},
-    {"name":"spr_arrow","order":4,"path":"sprites/spr_arrow/spr_arrow.yy",},
     {"name":"spr_cetrizine","order":2,"path":"sprites/spr_cetrizine/spr_cetrizine.yy",},
     {"name":"spr_computer","order":3,"path":"sprites/spr_computer/spr_computer.yy",},
     {"name":"spr_enobosarm","order":9,"path":"sprites/spr_enobosarm/spr_enobosarm.yy",},
@@ -57,5 +57,7 @@
     {"name":"spr_montelukast","order":6,"path":"sprites/spr_montelukast/spr_montelukast.yy",},
     {"name":"spr_propranolol","order":5,"path":"sprites/spr_propranolol/spr_propranolol.yy",},
     {"name":"spr_testosteronecypionate","order":8,"path":"sprites/spr_testosteronecypionate/spr_testosteronecypionate.yy",},
+    {"name":"spr_textbox","order":2,"path":"sprites/spr_textbox/spr_textbox.yy",},
+    {"name":"text_box","order":1,"path":"sprites/text_box/text_box.yy",},
   ],
 }

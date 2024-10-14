@@ -28,12 +28,12 @@ if (prev_med_info != global.med_info.name)
 	}
 }
 
-draw_set_color(c_teal);
+draw_set_color(c_navy);
 draw_set_font(fnt_main_h2);
-draw_text(x + 10, y + 10, global.med_info.name + ":");
+draw_text(x + 50, y + 80, global.med_info.name + ":");
 draw_set_color(c_white);
 draw_set_font(fnt_main);
-obj_med_controller.draw_text_scrolling(x + 10, y + 80, current_description, 1, 1);
+obj_med_controller.draw_text_scrolling(x + 50, y + 150, current_description, 1, 1);
 
 //draw_text(x + 10, y + 10, global.med_info.name + ":");
 //draw_set_font(fnt_main);
