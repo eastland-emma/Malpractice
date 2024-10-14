@@ -1,39 +1,81 @@
-global.dialogue = new Dialogue();
-text = buffer_load(global.script_name);
-strings = string_split(buffer_read(text,buffer_string), "\n");
-file_find_close();
-lines = array_length(strings);
+dialogue = new Dialogue();
+//text = buffer_load(global.script_name);
+//strings = string_split(buffer_read(text,buffer_string), "\n");
+//file_find_close();
+//lines = array_length(strings);
 x = 60;
 y = 60;
 
-for(var i = 0; i < lines; i++)
+//load_new_script(global.script_name);
+//for(var i = 0; i < lines; i++)
+//{
+//	var line_count = 0;
+//	words = string_split(strings[i], " ");
+//	show_debug_message(words[0]);
+//	var textbox = "";
+//	for(var j = 0; j < array_length(words); j++)
+//	{
+//		var word = words[j];
+//		if(string_length(word) + line_count > max_line_size)
+//		{
+//			textbox += "\n";
+//			line_count = 0;
+//		}
+//		line_count += string_length(word) + 1;
+//		textbox += word + " ";
+//	}
+
+//	strings[i] = textbox;
+//}
+
+//for(var i = 0; i < lines; i++)
+//{
+//	global.dialogue.add(strings[i]);
+//}
+//current_dialogue = global.dialogue.pop();
+
+load_new_script = function(_filename)
 {
-	var line_count = 0;
-	words = string_split(strings[i], " ");
-	show_debug_message(words[0]);
-	var textbox = "";
-	for(var j = 0; j < array_length(words); j++)
+	//Load file
+	text = buffer_load(_filename);
+	//Split file on the new lines
+	strings = string_split(buffer_read(text,buffer_string), "\n");
+	file_find_close();
+	lines = array_length(strings);
+	//Process each sentence
+	for(var i = 0; i < lines; i++)
 	{
-		var word = words[j];
-		if(string_length(word) + line_count > max_line_size)
+		var _line_count = 0;
+		words = string_split(strings[i], " ");
+		var _printable_text = "";
+		for(var j = 0; j < array_length(words); j++)
 		{
-			textbox += "\n";
-			line_count = 0;
+			var _word = words[j];
+			if(string_length(_word) + _line_count > max_line_size)
+			{
+				_printable_text += "\n";
+				_line_count = 0;
+			}
+			_line_count += string_length(_word) + 1;
+			_printable_text += _word + " ";
 		}
-		line_count += string_length(word) + 1;
-		textbox += word + " ";
+
+		strings[i] = _printable_text;
 	}
 
-	strings[i] = textbox;
+	for(var i = 0; i < lines; i++)
+	{
+		dialogue.add(strings[i]);
+	}
+	current_dialogue = dialogue.pop();
 }
 
-for(var i = 0; i < lines; i++)
+display_next_dialogue = function()
 {
-	global.dialogue.add(strings[i]);
+	visible = true;
+	draw_text_reset();
+	current_dialogue = dialogue.pop();
 }
-current_dialogue = global.dialogue.pop();
-
-
 //#########################################################
  
 ///     Description:    Draws text scrolling from the first to last character in a string.
@@ -157,3 +199,4 @@ function draw_text_reset(){
 ///
 //########################################################
 
+load_new_script(global.script_name);

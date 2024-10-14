@@ -25,7 +25,8 @@ if (x >= 900 && speed > 0)
 //wait until she stops and spawn the textbox
 if (speed == 0 && spawn_textbox){
 	spawn_textbox = false;
-	instance_create_depth(0,0,0, obj_text_box);
+	global.textbox.visible=true;
+	//instance_create_depth(0,0,0, obj_text_box);
 	//make arrow visible
 	inst_5DB312C8.visible = true;
 }

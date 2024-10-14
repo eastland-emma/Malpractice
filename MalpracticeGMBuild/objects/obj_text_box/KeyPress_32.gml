@@ -1,9 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (global.dialogue.count() > 0){
-	draw_text_reset();
-	current_dialogue = global.dialogue.pop();
+show_debug_message(dialogue.count())
+if (dialogue.count() > 0){
+	display_next_dialogue();
 }
 else{
-	instance_destroy(self);
+	//instance_destroy(self);
+	visible = false;
 }

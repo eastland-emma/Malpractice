@@ -8,7 +8,7 @@ function PrescriptionManager()constructor{
 	
 	patients = [patient0];
 	
-	//Add a new medication to the patients list of medicationa
+	//Add a new medication to the patients list of medication
 	prescribe = function(_patient_id, _medication){
 		array_push(patients[_patient_id], _medication);
 		show_debug_message("Prescribed: "+_medication.medication_name);
@@ -20,7 +20,7 @@ function PrescriptionManager()constructor{
 		return patient[array_length(patient)-1];
 	}
 	
-	//Accept the medication and get a new symptom set up
+	//Accept the medication, give the player feedback and get a new symptom set up
 	accept_medication = function(_patient_obj)
 	{
 		//get the current_medication for this patient
@@ -29,5 +29,8 @@ function PrescriptionManager()constructor{
 		_patient_obj.current_symptom = _med.causes_symptoms[irandom(array_length(_med.causes_symptoms)-1)];
 		//debug only
 		show_debug_message(_patient_obj.name_first+"'s current symptom is "+_patient_obj.current_symptom);
+		
+		//Have the character comment on the prescription
+		global.textbox.dialogue.add(_med.medication_name + ", huh?\nI guess I'll give it\na try.");
 	}
 }
