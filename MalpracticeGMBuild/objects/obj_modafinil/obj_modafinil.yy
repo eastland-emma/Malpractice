@@ -7,7 +7,7 @@
   "managed":true,
   "name":"obj_modafinil",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_med_parent","path":"objects/obj_med_parent/obj_med_parent.yy",},"propertyId":{"name":"medication_name","path":"objects/obj_med_parent/obj_med_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"modafinil\"",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_med_parent","path":"objects/obj_med_parent/obj_med_parent.yy",},"propertyId":{"name":"medication_name","path":"objects/obj_med_parent/obj_med_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Modafinil\"",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_med_parent","path":"objects/obj_med_parent/obj_med_parent.yy",},"propertyId":{"name":"medication_info","path":"objects/obj_med_parent/obj_med_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"A stimulant used to promote wakefulness, focus, and alertness. Often used to combat fatigue and improve cognitive function\"",},
   ],
   "parent":{

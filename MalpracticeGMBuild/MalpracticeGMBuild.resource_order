@@ -43,6 +43,8 @@
     {"name":"obj_text_box","order":5,"path":"objects/obj_text_box/obj_text_box.yy",},
     {"name":"Medicine_Cabinet","order":1,"path":"rooms/Medicine_Cabinet/Medicine_Cabinet.yy",},
     {"name":"Prescription_Manager","order":1,"path":"scripts/Prescription_Manager/Prescription_Manager.yy",},
+    {"name":"snd_mouse_click","order":2,"path":"sounds/snd_mouse_click/snd_mouse_click.yy",},
+    {"name":"snd_pill_hover","order":1,"path":"sounds/snd_pill_hover/snd_pill_hover.yy",},
     {"name":"medicine_background","order":1,"path":"sprites/medicine_background/medicine_background.yy",},
     {"name":"office_background","order":2,"path":"sprites/office_background/office_background.yy",},
     {"name":"spr_cetrizine","order":2,"path":"sprites/spr_cetrizine/spr_cetrizine.yy",},

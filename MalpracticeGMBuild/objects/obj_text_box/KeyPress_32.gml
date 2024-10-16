@@ -1,10 +1,8 @@
 /// @description Insert description here
-// You can write your code in this editor
-show_debug_message(dialogue.count())
+audio_play_sound(snd_mouse_click,0,false);
 if (dialogue.count() > 0){
 	display_next_dialogue();
 }
 else{
-	//instance_destroy(self);
 	visible = false;
 }

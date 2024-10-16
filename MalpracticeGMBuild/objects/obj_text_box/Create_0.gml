@@ -1,38 +1,6 @@
 dialogue = new Dialogue();
-//text = buffer_load(global.script_name);
-//strings = string_split(buffer_read(text,buffer_string), "\n");
-//file_find_close();
-//lines = array_length(strings);
 x = 60;
 y = 60;
-
-//load_new_script(global.script_name);
-//for(var i = 0; i < lines; i++)
-//{
-//	var line_count = 0;
-//	words = string_split(strings[i], " ");
-//	show_debug_message(words[0]);
-//	var textbox = "";
-//	for(var j = 0; j < array_length(words); j++)
-//	{
-//		var word = words[j];
-//		if(string_length(word) + line_count > max_line_size)
-//		{
-//			textbox += "\n";
-//			line_count = 0;
-//		}
-//		line_count += string_length(word) + 1;
-//		textbox += word + " ";
-//	}
-
-//	strings[i] = textbox;
-//}
-
-//for(var i = 0; i < lines; i++)
-//{
-//	global.dialogue.add(strings[i]);
-//}
-//current_dialogue = global.dialogue.pop();
 
 load_new_script = function(_filename)
 {
@@ -51,6 +19,11 @@ load_new_script = function(_filename)
 		for(var j = 0; j < array_length(words); j++)
 		{
 			var _word = words[j];
+			//Check for a variable in the text
+			if(string_char_at(_word, 0) == "*")
+			{
+				_word = global.patients[0].current_symptom;
+			}
 			if(string_length(_word) + _line_count > max_line_size)
 			{
 				_printable_text += "\n";

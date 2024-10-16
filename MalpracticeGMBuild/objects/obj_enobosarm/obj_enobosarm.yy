@@ -7,7 +7,7 @@
   "managed":true,
   "name":"obj_enobosarm",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_med_parent","path":"objects/obj_med_parent/obj_med_parent.yy",},"propertyId":{"name":"medication_name","path":"objects/obj_med_parent/obj_med_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"enobosarm\"",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_med_parent","path":"objects/obj_med_parent/obj_med_parent.yy",},"propertyId":{"name":"medication_name","path":"objects/obj_med_parent/obj_med_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Enobosarm\"",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_med_parent","path":"objects/obj_med_parent/obj_med_parent.yy",},"propertyId":{"name":"medication_info","path":"objects/obj_med_parent/obj_med_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Targets muscle and bone for lean muscle growth, can help maintain lean muscle mass during calorie deficits.\"",},
   ],
   "parent":{

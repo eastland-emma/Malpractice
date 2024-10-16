@@ -7,7 +7,7 @@
   "managed":true,
   "name":"obj_methandrostenolone",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_med_parent","path":"objects/obj_med_parent/obj_med_parent.yy",},"propertyId":{"name":"medication_name","path":"objects/obj_med_parent/obj_med_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"methandrostenolone\"",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_med_parent","path":"objects/obj_med_parent/obj_med_parent.yy",},"propertyId":{"name":"medication_name","path":"objects/obj_med_parent/obj_med_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Methandrostenolone\"",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_med_parent","path":"objects/obj_med_parent/obj_med_parent.yy",},"propertyId":{"name":"medication_info","path":"objects/obj_med_parent/obj_med_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Increases muscle mass and strength by boosting protein synthesis.\"",},
   ],
   "parent":{

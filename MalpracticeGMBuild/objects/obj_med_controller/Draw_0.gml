@@ -35,7 +35,3 @@ draw_set_color(c_white);
 draw_set_font(fnt_main);
 obj_med_controller.draw_text_scrolling(x + 50, y + 150, current_description, 1, 1);
 
-//draw_text(x + 10, y + 10, global.med_info.name + ":");
-//draw_set_font(fnt_main);
-//draw_text(x+ 10, y + 80,"Description: " + global.med_info.info);
-//draw_text(x+ 10, y + 120, "Click on " + global.med_info.name + " to perscribe it.");

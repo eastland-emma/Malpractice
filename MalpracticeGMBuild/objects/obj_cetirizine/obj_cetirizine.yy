@@ -7,7 +7,7 @@
   "managed":true,
   "name":"obj_cetirizine",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_med_parent","path":"objects/obj_med_parent/obj_med_parent.yy",},"propertyId":{"name":"medication_name","path":"objects/obj_med_parent/obj_med_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"cetirizine\"",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_med_parent","path":"objects/obj_med_parent/obj_med_parent.yy",},"propertyId":{"name":"medication_name","path":"objects/obj_med_parent/obj_med_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Cetirizine\"",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_med_parent","path":"objects/obj_med_parent/obj_med_parent.yy",},"propertyId":{"name":"medication_info","path":"objects/obj_med_parent/obj_med_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"An antihistamine that reduces the body's allergic response by blocking histamine, a substance produced during allergic reactions\"",},
   ],
   "parent":{

@@ -7,7 +7,7 @@
   "managed":true,
   "name":"obj_montelukast",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_med_parent","path":"objects/obj_med_parent/obj_med_parent.yy",},"propertyId":{"name":"medication_name","path":"objects/obj_med_parent/obj_med_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"montelukast\"",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_med_parent","path":"objects/obj_med_parent/obj_med_parent.yy",},"propertyId":{"name":"medication_name","path":"objects/obj_med_parent/obj_med_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Montelukast\"",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_med_parent","path":"objects/obj_med_parent/obj_med_parent.yy",},"propertyId":{"name":"medication_info","path":"objects/obj_med_parent/obj_med_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Leukotriene receptor antagonist (inflammatory mediators)  that blocking chemicals in the body that cause allergy and asthma symptoms\"",},
   ],
   "parent":{

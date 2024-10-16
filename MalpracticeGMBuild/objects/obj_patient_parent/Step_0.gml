@@ -18,25 +18,55 @@ if(oscillating_count > 30)
 
 oscillating_count++;
 
-
-if (x >= 900 && speed > 0)
-	speed -= .05;
+if(entering_screen)//If entering the screen
+{
+	if (x >= 900 && speed > 0)
+		speed -= .05;
 	
-//wait until she stops and spawn the textbox
-if (speed == 0 && spawn_textbox){
-	spawn_textbox = false;
-	global.textbox.visible=true;
-	//instance_create_depth(0,0,0, obj_text_box);
-	//make arrow visible
-	inst_5DB312C8.visible = true;
-}
+	//wait until she stops and spawn the textbox
+	if (speed == 0 && spawn_textbox){
+		spawn_textbox = false;
+		global.textbox.visible=true;
+		//instance_create_depth(0,0,0, obj_text_box);
+		//make arrow visible
+		inst_5DB312C8.visible = true;
+	}
 
-//Makes sure patients persist but do not appear in the environment after rooms are changed
-if(room != room_first)
-{
-	visible=false;
+
+
+	//Makes sure patients persist but do not appear in the environment after rooms are changed
+	if(room != room_first)
+	{
+		visible=false;
+	}
+	else
+	{
+		visible = true;
+	}
 }
-else
+else //If leaving the screen
 {
-	visible = true;
+	if (x <= 1300 && speed < 5)
+		speed += .05;
+	
+	//wait until she is offscreen
+	if (x > 2300)
+	{
+		entering_screen = true;
+		speed = 0;
+		alarm_set(0, 2 * 30);
+	}
+
+
+
+	//Makes sure patients persist but do not appear in the environment after rooms are changed
+	if(room != room_first)
+	{
+		visible=false;
+	}
+	else
+	{
+		visible = true;
+	}
+	
 }

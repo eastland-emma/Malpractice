@@ -23,7 +23,7 @@
   ],
   "name":"spr_montelukast",
   "nineSlice":null,
-  "origin":4,
+  "origin":7,
   "parent":{
     "name":"Medications",
     "path":"folders/Sprites/Medications.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":50,
-    "yorigin":36,
+    "yorigin":72,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

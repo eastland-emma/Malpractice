@@ -37,11 +37,9 @@ function PrescriptionManager()constructor{
 		else
 		{
 			global.textbox.dialogue.add("Does "+ _med.medication_name + "\neven treat "+previous_symptom+"?\nMaybe I should\nsee someone else.");
-		//debug only
-		show_debug_message(_patient_obj.name_first+"'s current symptom is "+_patient_obj.current_symptom);
+		
 		}
 		
-		//Have the character comment on the prescription
 		
 	}
 	

@@ -17,16 +17,16 @@ function select_medication(_selected, _all)
 function spawn_medications(_selected)
 {
 	var length = array_length(_selected);
-	var _x = 200;
-	var _y = 175;
+	var _x = 150;
+	var _y = 125;
 	for(var i =0; i < length; i++)
 	{
 		instance_create_depth(_x, _y, 1, _selected[i]);
 		_x += 150;
 		if(_x >= 801)
 		{
-			_x =200;
-			_y += 200;
+			_x =150;
+			_y += 135;
 		}
 	}
 }
