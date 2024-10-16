@@ -36,6 +36,7 @@ function PrescriptionManager()constructor{
 		}
 		else
 		{
+			global.patients[0].image_index = 2;
 			global.textbox.dialogue.add("Does "+ _med.medication_name + "\neven treat "+previous_symptom+"?\nMaybe I should\nsee someone else.");
 		
 		}

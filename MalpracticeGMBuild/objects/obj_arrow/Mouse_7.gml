@@ -3,14 +3,14 @@
 global.textbox.visible=false;
 if(room = room_first)
 {
-	room_goto_next();
-	image_xscale = -1;
+	image_index = 1;
 	x = 200;
+	room_goto_next();
 }
 else
 {
-	room_goto_previous();
-	image_xscale = 1;
+	image_index = 0;
 	x = 1720;
+	room_goto_previous();
 }
 	
