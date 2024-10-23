@@ -5,8 +5,9 @@
 function PrescriptionManager()constructor{
 	//Array represents all prescriptions
 	patient0 = [];
+	patient1 = [];
 	
-	patients = [patient0];
+	patients = [patient0,patient1];
 	
 	//Add a new medication to the patients list of medication
 	prescribe = function(_patient_id, _medication){

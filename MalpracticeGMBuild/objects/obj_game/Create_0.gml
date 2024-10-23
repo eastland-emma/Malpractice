@@ -7,6 +7,8 @@ global.prescription_manager = new PrescriptionManager();
 
 global.patients = [];
 array_push(global.patients,instance_create_depth(0, 800, 100, obj_patient0));
+array_push(global.patients,instance_create_depth(0, 800, 100, obj_patient1));
+
 //Make the textbox a global for easy manuveurability
 global.textbox = instance_create_depth(0,0,0, obj_text_box);
 global.textbox.visible = false;
