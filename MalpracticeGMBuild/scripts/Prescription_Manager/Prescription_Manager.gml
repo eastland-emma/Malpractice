@@ -2,6 +2,10 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 
 
+
+//POTENTIAL FIX TO PERSISTENT CHARACTERS
+//Hold an extra array of everyones current symptoms. Additionally, 
+//Keep other information that isn't static in the obj_game
 function PrescriptionManager()constructor{
 	//Array represents all prescriptions
 	patient0 = [];

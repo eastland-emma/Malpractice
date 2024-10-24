@@ -1,0 +1,3 @@
+Welcome to Malpractice! Press space to continue.
+After you finish talking to your patient, you will be able to move to the medicine room.
+ 
