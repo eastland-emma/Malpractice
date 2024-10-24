@@ -9,5 +9,3 @@ global.prescription_manager.accept_medication(global.patients[0]);
 //Allow the textbox to move to it's next dialogue
 global.textbox.display_next_dialogue();
 global.patients[0].entering_screen = false;
-inst_5DB312C8.image_index = 0;
-inst_5DB312C8.x = 1720;
