@@ -7,12 +7,12 @@
   "inheritLayers":false,
   "instanceCreationOrder":[
     {"name":"inst_14F09AD3","path":"rooms/Room1/Room1.yy",},
-    {"name":"inst_5DB312C8","path":"rooms/Room1/Room1.yy",},
+    {"name":"inst_8333986","path":"rooms/Room1/Room1.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"Gui_Instances","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
-        {"$GMRInstance":"v1","%Name":"inst_5DB312C8","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5DB312C8","objectId":{"name":"obj_arrow","path":"objects/obj_arrow/obj_arrow.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1632.0,"y":896.0,},
+        {"$GMRInstance":"v1","%Name":"inst_8333986","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_8333986","objectId":{"name":"obj_go_to_meds","path":"objects/obj_go_to_meds/obj_go_to_meds.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1728.0,"y":928.0,},
       ],"layers":[],"name":"Gui_Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Assets_1","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_642D6899","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_642D6899","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0167015,"scaleY":1.0,"spriteId":{"name":"spr_countertop","path":"sprites/spr_countertop/spr_countertop.yy",},"x":0.0,"y":96.0,},

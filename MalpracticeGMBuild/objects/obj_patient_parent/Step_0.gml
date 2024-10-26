@@ -28,8 +28,6 @@ if(entering_screen)//If entering the screen
 		spawn_textbox = false;
 		global.textbox.visible=true;
 		//instance_create_depth(0,0,0, obj_text_box);
-		//make arrow visible
-		inst_5DB312C8.visible = true;
 	}
 
 }

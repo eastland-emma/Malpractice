@@ -1,12 +1,12 @@
 {
   "$GMObject":"",
-  "%Name":"obj_arrow",
+  "%Name":"obj_go_to_meds",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":7,"eventType":6,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_arrow",
+  "name":"obj_go_to_meds",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_arrow",
-    "path":"sprites/spr_arrow/spr_arrow.yy",
+    "name":"spr_arrow_right",
+    "path":"sprites/spr_arrow_right/spr_arrow_right.yy",
   },
   "spriteMaskId":null,
   "visible":true,

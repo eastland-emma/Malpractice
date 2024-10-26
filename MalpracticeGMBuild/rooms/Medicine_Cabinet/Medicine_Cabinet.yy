@@ -8,11 +8,13 @@
   "instanceCreationOrder":[
     {"name":"inst_2A0C0F2F","path":"rooms/Medicine_Cabinet/Medicine_Cabinet.yy",},
     {"name":"inst_310364F","path":"rooms/Medicine_Cabinet/Medicine_Cabinet.yy",},
+    {"name":"inst_76982008","path":"rooms/Medicine_Cabinet/Medicine_Cabinet.yy",},
   ],
   "isDnd":false,
   "layers":[
     {"$GMRInstanceLayer":"","%Name":"GUI_Computer","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v1","%Name":"inst_310364F","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_310364F","objectId":{"name":"obj_computer","path":"objects/obj_computer/obj_computer.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":-1.0,"scaleY":1.0,"x":1568.0,"y":832.0,},
+        {"$GMRInstance":"v1","%Name":"inst_76982008","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_76982008","objectId":{"name":"obj_go_to_lobby","path":"objects/obj_go_to_lobby/obj_go_to_lobby.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":192.0,"y":928.0,},
       ],"layers":[],"name":"GUI_Computer","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRAssetLayer":"","%Name":"Counter","assets":[
         {"$GMRSpriteGraphic":"","%Name":"graphic_57C3F39","animationSpeed":1.0,"colour":4294967295,"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_57C3F39","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_countertop","path":"sprites/spr_countertop/spr_countertop.yy",},"x":0.0,"y":96.0,},
