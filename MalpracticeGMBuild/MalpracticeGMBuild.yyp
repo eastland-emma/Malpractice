@@ -101,7 +101,7 @@
     {"id":{"name":"spr_propranolol","path":"sprites/spr_propranolol/spr_propranolol.yy",},},
     {"id":{"name":"spr_testosteronecypionate","path":"sprites/spr_testosteronecypionate/spr_testosteronecypionate.yy",},},
     {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},},
-    {"id":{"name":"text_box","path":"sprites/text_box/text_box.yy",},},
+    {"id":{"name":"spr_tutorial_textbox","path":"sprites/spr_tutorial_textbox/spr_tutorial_textbox.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

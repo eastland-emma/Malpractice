@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+persistent = true;
 
 // Inherit the parent event
 event_inherited();//Text scrolling stuff
@@ -26,10 +27,7 @@ load_new_script = function(_filename)
 		{
 			var _word = words[j];
 			//Check for a variable in the text
-			if(string_char_at(_word, 0) == "*")
-			{
-				_word = global.patients[0].current_symptom;
-			}
+			
 			if(string_length(_word) + _line_count > max_line_size)
 			{
 				_printable_text += "\n";
@@ -54,6 +52,26 @@ display_next_dialogue = function()
 	visible = true;
 	draw_text_reset();
 	current_dialogue = dialogue.pop();
+	if(current_dialogue == "-b")
+	{
+		handle_tutorial_move(-1)
+	}
+	if(current_dialogue == "-n")
+	{
+		handle_tutorial_move(1)
+	}
+	
 }
 
 load_new_script(global.script_name);
+
+
+handle_tutorial_move = function(_direction_of_move)
+{
+	if(_direction_of_move >= 1)
+		room_goto_next();
+	if(_direction_of_move <= -1)
+		room_goto_previous();
+	display_next_dialogue();
+		
+}
