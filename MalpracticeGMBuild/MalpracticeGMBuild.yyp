@@ -71,8 +71,6 @@
     {"id":{"name":"obj_propranolol","path":"objects/obj_propranolol/obj_propranolol.yy",},},
     {"id":{"name":"obj_testosterone_cypionate","path":"objects/obj_testosterone_cypionate/obj_testosterone_cypionate.yy",},},
     {"id":{"name":"obj_text_box","path":"objects/obj_text_box/obj_text_box.yy",},},
-    {"id":{"name":"obj_text_parent","path":"objects/obj_text_parent/obj_text_parent.yy",},},
-    {"id":{"name":"obj_tutorial_text_box","path":"objects/obj_tutorial_text_box/obj_tutorial_text_box.yy",},},
     {"id":{"name":"Medicine_Cabinet","path":"rooms/Medicine_Cabinet/Medicine_Cabinet.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
     {"id":{"name":"Dialog","path":"scripts/Dialog/Dialog.yy",},},

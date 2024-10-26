@@ -1,6 +1,7 @@
 /// @description Draw the character moving across the screen as appropriate 
 
 //Control up & down movement
+
 if(is_up)
 {
 	direction += 2;
@@ -24,14 +25,13 @@ if(entering_screen)//If entering the screen
 		speed -= .05;
 	
 	//wait until she stops and spawn the textbox
-	if (speed == 0 && spawn_textbox){
-		spawn_textbox = false;
-		global.textbox.visible=true;
-		//instance_create_depth(0,0,0, obj_text_box);
+	if (speed == 0 && x > 500){
+		global.textbox.make_visible();
+		entering_screen = false;
 	}
 
 }
-else //If leaving the screen
+if(exiting_screen) //If leaving the screen
 {
 	//Speed up slowly
 	if (x <= 1300 && speed < 5)
@@ -41,20 +41,21 @@ else //If leaving the screen
 	if (x > 2300)
 	{
 		//Prepare for reset
-		entering_screen = true;
+		exiting_screen = false;
+		finished = true;
 		speed = 0;
-		global.textbox.visible = false;
+		global.textbox.make_invisible();
 		//Reset in 2 seconds
-		alarm_set(0, 2 * 30);
+		//alarm_set(0, 2 * 30);
 	}
 	
 }
 //Makes sure patients persist but do not appear in the environment after rooms are changed
-	if(room != room_first)
-	{
-		visible=false;
-	}
-	else
-	{
-		visible = true;
-	}
+if(room != room_first)
+{
+	visible = false;
+}
+else
+{
+	visible = true;
+}

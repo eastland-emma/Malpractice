@@ -1,7 +1,6 @@
 dialogue = new Dialogue();
 x = 60;
 y = 60;
-
 load_new_script = function(_filename)
 {
 	//Load file
@@ -45,7 +44,7 @@ load_new_script = function(_filename)
 
 display_next_dialogue = function()
 {
-	visible = true;
+	make_visible();
 	draw_text_reset();
 	current_dialogue = dialogue.pop();
 }
@@ -172,4 +171,14 @@ function draw_text_reset(){
 ///
 //########################################################
 
+function make_visible()
+{
+	//if conditions are met, make visible
+	visible = true;
+}
+function make_invisible()
+{
+	//if conditions are met, make invisible
+	visible = false;
+}
 load_new_script(global.script_name);
