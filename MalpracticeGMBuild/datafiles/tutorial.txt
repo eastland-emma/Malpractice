@@ -1,6 +1,6 @@
 Welcome to Malpractice! Press space to continue.
 After you finish talking to your patient, you will be able to move to the medicine room.
--n
++
 When you are in the medicine room, hover over a medication to receive basic information about the drug.
 If you still want more information about a drug, click on the computer to get more information.
 Using the computer takes time. For you, time is money. 
@@ -8,6 +8,6 @@ Make sure to use the computer when you want to know exactly what symptoms a medi
 Some medications are used to treat symptoms that are pretty different from their general uses.
 If you are confused, try looking it up.
 We'll head back to the lobby
--b
+-
 Your first patient is about to come in.
 Go ahead and give it your all!

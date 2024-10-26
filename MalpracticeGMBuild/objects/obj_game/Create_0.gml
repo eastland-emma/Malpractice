@@ -62,7 +62,7 @@ var todaysFilename = "day" + string(_dayNum) + ".txt";
 global.tutorial_over = true;
 if(_dayNum == 0)
 {
-	array_push(global.patients,instance_create_depth(920, 540, 100, obj_tutorial_text_box));
+	instance_create_depth(920, 540, 0, obj_tutorial_text_box);
 	global.tutorial_over = false;
 }
 if(global.tutorial_over == true){

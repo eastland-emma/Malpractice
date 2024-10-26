@@ -25,12 +25,6 @@ load_new_script = function(_filename)
 		for(var j = 0; j < array_length(words); j++)
 		{
 			var _word = words[j];
-			//Check for a variable in the text
-			if(_word == "-n\n " || _word == "-b\n ")
-			{
-				_printable_text = _word;
-				break;
-			}
 			if(string_length(_word) + _line_count > max_line_size)
 			{
 				_printable_text += "\n";
@@ -54,11 +48,11 @@ display_next_dialogue = function()
 	visible = true;
 	current_dialogue = dialogue.pop();
 	show_debug_message("_" + current_dialogue + "_");
-	if(current_dialogue == "-b")
+	if(string_char_at(current_dialogue,0) =="-")
 	{
 		handle_tutorial_move(-1);
 	}
-	if(current_dialogue == "-n")
+	if(string_char_at(current_dialogue,0) =="+")
 	{
 		show_debug_message("go next");
 		handle_tutorial_move(1);
