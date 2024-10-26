@@ -45,6 +45,8 @@
     {"name":"obj_propranolol","order":11,"path":"objects/obj_propranolol/obj_propranolol.yy",},
     {"name":"obj_testosterone_cypionate","order":7,"path":"objects/obj_testosterone_cypionate/obj_testosterone_cypionate.yy",},
     {"name":"obj_text_box","order":5,"path":"objects/obj_text_box/obj_text_box.yy",},
+    {"name":"obj_text_parent","order":16,"path":"objects/obj_text_parent/obj_text_parent.yy",},
+    {"name":"obj_tutorial_text_box","order":17,"path":"objects/obj_tutorial_text_box/obj_tutorial_text_box.yy",},
     {"name":"Medicine_Cabinet","order":1,"path":"rooms/Medicine_Cabinet/Medicine_Cabinet.yy",},
     {"name":"Prescription_Manager","order":1,"path":"scripts/Prescription_Manager/Prescription_Manager.yy",},
     {"name":"snd_mouse_click","order":2,"path":"sounds/snd_mouse_click/snd_mouse_click.yy",},
@@ -67,7 +69,7 @@
     {"name":"spr_patient1","order":1,"path":"sprites/spr_patient1/spr_patient1.yy",},
     {"name":"spr_propranolol","order":5,"path":"sprites/spr_propranolol/spr_propranolol.yy",},
     {"name":"spr_testosteronecypionate","order":8,"path":"sprites/spr_testosteronecypionate/spr_testosteronecypionate.yy",},
+    {"name":"spr_text_box","order":1,"path":"sprites/spr_text_box/spr_text_box.yy",},
     {"name":"spr_textbox","order":2,"path":"sprites/spr_textbox/spr_textbox.yy",},
-    {"name":"text_box","order":1,"path":"sprites/text_box/text_box.yy",},
   ],
 }

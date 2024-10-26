@@ -1,12 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_med_controller",
+  "%Name":"obj_tutorial_text_box",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":32,"eventType":9,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_med_controller",
+  "name":"obj_tutorial_text_box",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
@@ -30,14 +31,14 @@
   "physicsShapePoints":[],
   "physicsStartAwake":true,
   "properties":[
-    {"$GMObjectProperty":"v1","%Name":"max_line_size","filters":[],"listItems":[],"multiselect":false,"name":"max_line_size","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"25","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"max_line_size","filters":[],"listItems":[],"multiselect":false,"name":"max_line_size","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"35","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_textbox",
-    "path":"sprites/spr_textbox/spr_textbox.yy",
+    "name":"spr_text_box",
+    "path":"sprites/spr_text_box/spr_text_box.yy",
   },
   "spriteMaskId":null,
   "visible":true,

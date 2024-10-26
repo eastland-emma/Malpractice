@@ -1,9 +1,13 @@
+/// @description Insert description here
+// You can write your code in this editor
+persistent = true;
+
+// Inherit the parent event
+event_inherited();//Text scrolling stuff
+current_dialogue = "";
 dialogue = new Dialogue();
 x = 60;
 y = 60;
-
-event_inherited();
-
 load_new_script = function(_filename)
 {
 	//Load file
@@ -22,9 +26,10 @@ load_new_script = function(_filename)
 		{
 			var _word = words[j];
 			//Check for a variable in the text
-			if(string_char_at(_word, 0) == "*")
+			if(_word == "-n\n " || _word == "-b\n ")
 			{
-				_word = global.patients[0].current_symptom;
+				_printable_text = _word;
+				break;
 			}
 			if(string_length(_word) + _line_count > max_line_size)
 			{
@@ -34,7 +39,6 @@ load_new_script = function(_filename)
 			_line_count += string_length(_word) + 1;
 			_printable_text += _word + " ";
 		}
-
 		strings[i] = _printable_text;
 	}
 
@@ -44,23 +48,33 @@ load_new_script = function(_filename)
 	}
 	current_dialogue = dialogue.pop();
 }
-
+load_new_script("tutorial.txt"); 
 display_next_dialogue = function()
 {
-	make_visible();
-	draw_text_reset();
-	current_dialogue = dialogue.pop();
-}
-
-
-function make_visible()
-{
-	//if conditions are met, make visible
 	visible = true;
+	current_dialogue = dialogue.pop();
+	show_debug_message("_" + current_dialogue + "_");
+	if(current_dialogue == "-b")
+	{
+		handle_tutorial_move(-1);
+	}
+	if(current_dialogue == "-n")
+	{
+		show_debug_message("go next");
+		handle_tutorial_move(1);
+	}
+	draw_text_reset();
 }
-function make_invisible()
+
+
+
+
+handle_tutorial_move = function(_direction_of_move)
 {
-	//if conditions are met, make invisible
-	visible = false;
+	if(_direction_of_move >= 1)
+		room_goto_next();
+	if(_direction_of_move <= -1)
+		room_goto_previous();
+	display_next_dialogue();
+		
 }
-load_new_script(global.script_name);
