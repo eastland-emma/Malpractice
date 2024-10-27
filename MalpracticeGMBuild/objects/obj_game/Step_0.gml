@@ -10,14 +10,16 @@ if(global.start_day) //start the first patient walking out
 
 if(global.current_patient.finished)
 {
+	//freeze controls when patient is leaving
 	global.day_active = false;
+	global.current_patient.finished = false;
 	show_debug_message("patient finished \n");
-	patient_num += 1;
-	if(patient_num >= array_length(global.patients)) //all patients have been seen
+	if(ds_queue_empty(global.patients)) //all patients have been seen
 		finish_day();
 	else
 	{
-		global.current_patient = global.patients[patient_num];
+		global.textbox.load_new_script(ds_queue_dequeue(global.scripts));
+		global.current_patient = ds_queue_dequeue(global.patients);
 		global.current_patient.speed = 5;
 		global.current_patient.entering_screen = true;
 	}

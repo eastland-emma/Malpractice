@@ -9,9 +9,8 @@ current_meds = []; //this is the list of medication objects that is actually goi
 ///@description adds all possible medications to the selected medications array
 function all_medication()
 {
-	global.selected_medications = [];
 	for(var i=0; i < array_length(global.all_medications); i++)
-		array_push(global.selected_medications, global.all_medications[i]);
+		array_push(current_meds, global.all_medications[i]);
 }
 
 ///@description Spawns all medications in the selected_medications array
@@ -38,6 +37,11 @@ function prep_medications()
 	//turn all medication list into actual off screen instances so names can be
 	//compared with strings from the file parsing
 	med_instances = [];
+	if(array_length(global.selected_medications) < 1)
+	{
+		current_meds = global.all_medications;
+	}
+		
 	for(i = 0; i < array_length(global.all_medications); i++)
 	{
 		cur_med = instance_create_depth(-500, -500, 1, (global.all_medications[i]));

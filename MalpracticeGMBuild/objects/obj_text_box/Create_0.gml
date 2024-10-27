@@ -5,13 +5,14 @@ y = 60;
 
 event_inherited();
 
-load_new_script = function(_filename)
+function load_new_script(_filename)
 {
 	//clear dialouge
 	dialogue = new Dialogue();
 	//Load file
 	text = buffer_load(_filename);
 	//Split file on the new lines
+	show_debug_message(_filename);
 	strings = string_split(buffer_read(text,buffer_string), "\n");
 	file_find_close();
 	lines = array_length(strings);
@@ -27,7 +28,7 @@ load_new_script = function(_filename)
 			//Check for a variable in the text
 			if(string_char_at(_word, 0) == "*")
 			{
-				_word = global.patients[0].current_symptom;
+				_word = global.current_patient.current_symptom;
 			}
 			if(string_length(_word) + _line_count > max_line_size)
 			{
@@ -66,4 +67,4 @@ function make_invisible()
 	//if conditions are met, make invisible
 	visible = false;
 }
-load_new_script(global.script_name);
+//load_new_script(global.script_name);

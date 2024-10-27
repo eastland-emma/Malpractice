@@ -34,6 +34,8 @@
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"day0.txt","CopyToMask":-1,"filePath":"datafiles","name":"day0.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"day1.txt","CopyToMask":-1,"filePath":"datafiles","name":"day1.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"default_ask.txt","CopyToMask":-1,"filePath":"datafiles","name":"default_ask.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"nadia_script.txt","CopyToMask":-1,"filePath":"datafiles","name":"nadia_script.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"tutorial_part1.txt","CopyToMask":-1,"filePath":"datafiles","name":"tutorial_part1.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"tutorial_part2.txt","CopyToMask":-1,"filePath":"datafiles","name":"tutorial_part2.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},

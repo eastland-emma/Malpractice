@@ -28,6 +28,7 @@ if(entering_screen)//If entering the screen
 	if (speed == 0 && x > 500){
 		global.textbox.make_visible();
 		entering_screen = false;
+		global.day_active = true;
 	}
 
 }
@@ -45,8 +46,13 @@ if(exiting_screen) //If leaving the screen
 		finished = true;
 		speed = 0;
 		global.textbox.make_invisible();
-		//Reset in 2 seconds
-		//alarm_set(0, 2 * 30);
+		
+		//reset patient position info so they can enter room again in future days
+		x = -400;
+		y = 800;
+		direction = 330;
+		oscillating_count = 0;
+		is_up = true;
 	}
 	
 }
