@@ -47,14 +47,12 @@ display_next_dialogue = function()
 {
 	visible = true;
 	current_dialogue = dialogue.pop();
-	show_debug_message("_" + current_dialogue + "_");
 	if(string_char_at(current_dialogue,0) =="-")
 	{
 		handle_tutorial_move(-1);
 	}
 	if(string_char_at(current_dialogue,0) =="+")
 	{
-		show_debug_message("go next");
 		handle_tutorial_move(1);
 	}
 	draw_text_reset();

@@ -3,17 +3,38 @@
 global.script_name = "nadia_script.txt";
 // Create a prescription manager to track everyones current and past prescriptions
 global.prescription_manager = new PrescriptionManager();
+global.selected_medications = [];
+global.all_medications = [obj_alprazolam,obj_cetirizine, obj_enobosarm,obj_escitalopram, obj_ligandrol,obj_loratadine, obj_lorazepam, obj_methandrostenolone, obj_modafinil,obj_montelukast,obj_propranolol,obj_testosterone_cypionate,obj_meclizine,obj_ondansetron];//Add in more medications as they are made
+global.day_active = false; //True if player should be allowed to switch screens and prescribe medications
+global.start_day = true; //when start day is true, sends first patient out, then is automatically changed back to false.
 
+if(day_num == 0)
+{
+	instance_create_depth(920, 540, 0, obj_tutorial_text_box);
+	global.start_day = false;
+}
 
-// Create a global array of patients so we refer to the same one every time
-// Create a nadia instance and place it into an array so we can control it 
-global.patients = [];
-patient_num = 0;
-//array_push(global.patients,instance_create_depth(-250, 800, 100, obj_patient0));
-//array_push(global.patients,instance_create_depth(-250, 800, 100, obj_patient1));
-//Load todays file
-global.scripts = [];
-var todaysFilename = "day" + string(_dayNum) + ".txt";
+function finish_day()
+{
+	show_debug_message("day complete");
+	//set up the next day
+	day_num += 1;
+	//play an animation or have a results screen showing day is complete and progress or something.
+	
+	//start the next day.
+	 
+	//prep_day(); 
+	
+	//global.start_day = true;
+}
+
+function prep_day()
+{
+	// Create a global array of patients so we refer to the same one every time
+	global.patients = [];
+	patient_num = 0;
+	global.scripts = [];
+	var todaysFilename = "day" + string(day_num) + ".txt";
 	//Load file
 	text = buffer_load(todaysFilename);
 	//Split file on the new lines
@@ -34,45 +55,25 @@ var todaysFilename = "day" + string(_dayNum) + ".txt";
 		switch(ids[j])
 		{
 			case 0: 
-				array_push(global.patients,instance_create_depth(-250, 800, 100, obj_patient0));
+				array_push(global.patients,instance_create_depth(-400, 800, 100, obj_patient0));
 				break;
 			case 1:
-				array_push(global.patients,instance_create_depth(-250, 800, 100, obj_patient1));
+				array_push(global.patients,instance_create_depth(-400, 800, 100, obj_patient1));
 				break;
 			default:
 				break;
 		}
 	}
-	////Line 3 contains medications to provide for the day
-	//meds = string_split(strings[2], " ");
-	//for(var j = 0; j < array_length(meds); j++)
-	//{
-	//	switch(ids[j])
-	//	{
-	//		case 0: 
-	//			array_push(global.patients,instance_create_depth(-250, 800, 100, obj_patient0));
-	//			break;
-	//		case 1:
-	//			array_push(global.patients,instance_create_depth(-250, 800, 100, obj_patient1));
-	//			break;
-	//		default:
-	//			break;
-	//	}
-	//}
-global.tutorial_over = true;
-if(_dayNum == 0)
-{
-	instance_create_depth(920, 540, 0, obj_tutorial_text_box);
-	global.tutorial_over = false;
-}
-if(global.tutorial_over == true){
-global.current_patient = global.patients[0];
-global.current_patient.entering_screen = true;
-global.current_patient.speed = 5;
-
-global.textbox = instance_create_depth(0,0,0, obj_text_box);
-global.textbox.make_invisible();
-global.textbox.persistent = true;
+	//Line 3 controlling meds that spawn
+	meds = string_split(strings[2], " ");
+	global.selected_medications = meds;
+	//show_debug_message("these are the meds" + str(global.selected_medications);
+	
+	global.textbox = instance_create_depth(0,0,0, obj_text_box);
+	global.textbox.make_invisible();
+	global.textbox.persistent = true;
+	
+	global.current_patient = global.patients[patient_num];
 }
 
-
+prep_day();

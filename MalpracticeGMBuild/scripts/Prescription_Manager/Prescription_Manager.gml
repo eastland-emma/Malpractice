@@ -16,7 +16,7 @@ function PrescriptionManager()constructor{
 	//Add a new medication to the patients list of medication
 	prescribe = function(_patient_id, _medication){
 		array_push(patients[_patient_id], _medication);
-		show_debug_message("Prescribed: "+_medication.medication_name);
+		show_debug_message("Prescribed: "+_medication.medication_name + " to " + string(_patient_id));
 	}
 	
 	//Return whatever the current prescription for this character

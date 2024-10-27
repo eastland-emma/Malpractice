@@ -7,6 +7,6 @@ if (dialogue.count() > 0){
 }
 else
 {
-	global.tutorial_over = true;
+	global.start_day = true;
 	instance_destroy(self);
 }

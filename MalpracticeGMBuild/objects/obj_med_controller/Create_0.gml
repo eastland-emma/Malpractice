@@ -1,27 +1,28 @@
 /// @description Insert description here
 // You can write your code in this editor
-
-global.selected_medications = [];
-global.all_medications = [obj_alprazolam,obj_cetirizine, obj_enobosarm,obj_escitalopram, obj_ligandrol,obj_loratadine, obj_lorazepam, obj_methandrostenolone, obj_modafinil,obj_montelukast,obj_propranolol,obj_testosterone_cypionate,obj_meclizine,obj_ondansetron];//Add in more medications as they are made
 global.med_info = {name: "Select medicine", 
 				   info: "Hover for more details, click the medication to prescribe."};
 prev_med_info = "start";
 current_description = "start";
-function select_medication(_selected, _all)
+current_meds = []; //this is the list of medication objects that is actually going to be spawned.
+
+///@description adds all possible medications to the selected medications array
+function all_medication()
 {
-	for(var i=0; i < array_length(_all); i++)
-		array_push(_selected, _all[i]);
+	global.selected_medications = [];
+	for(var i=0; i < array_length(global.all_medications); i++)
+		array_push(global.selected_medications, global.all_medications[i]);
 }
 
-///@description initializes medications to shelves in an orderly way.
-function spawn_medications(_selected)
+///@description Spawns all medications in the selected_medications array
+function spawn_medications()
 {
-	var length = array_length(_selected);
+	var length = array_length(current_meds);
 	var _x = 150;
 	var _y = 125;
-	for(var i =0; i < length; i++)
+	for(var i = 0; i < length; i++)
 	{
-		instance_create_depth(_x, _y, 1, _selected[i]);
+		instance_create_depth(_x, _y, 1, (current_meds[i]));
 		_x += 150;
 		if(_x >= 1101)
 		{
@@ -31,8 +32,32 @@ function spawn_medications(_selected)
 	}
 }
 
-select_medication(global.selected_medications, global.all_medications);
-spawn_medications(global.selected_medications);
+///@description turns strings into obj_game objects and prepares them to be spawned
+function prep_medications()
+{
+	//turn all medication list into actual off screen instances so names can be
+	//compared with strings from the file parsing
+	med_instances = [];
+	for(i = 0; i < array_length(global.all_medications); i++)
+	{
+		cur_med = instance_create_depth(-500, -500, 1, (global.all_medications[i]));
+		array_push(med_instances, cur_med)
+	}
+	
+	//compare medication names specified in file, and add matches into list to be spawned.
+	for(var i=0; i < array_length(global.selected_medications); i++)
+	{
+		for(var j=0; j < array_length(med_instances); j++)
+		{
+			cur_med = med_instances[j];
+			if(cur_med.medication_name == global.selected_medications[i])
+				array_push(current_meds, global.all_medications[j]);				
+		}
+	}
+}
+
+prep_medications()
+spawn_medications();
 
 
 event_inherited();
