@@ -14,21 +14,22 @@ function PrescriptionManager()constructor{
 	patients = [patient0,patient1];
 	
 	//Add a new medication to the patients list of medication
-	prescribe = function(_patient_id, _medication){
+	function prescribe(_patient_id, _medication)
+	{
 		array_push(patients[_patient_id], _medication);
 		show_debug_message("Prescribed: "+_medication.medication_name + " to " + string(_patient_id));
 	}
 	
 	//Return whatever the current prescription for this character
-	current_prescription = function(_patient_id){
+	function current_prescription(_patient_id)
+	{
 		patient = patients[_patient_id];
 		return patient[array_length(patient)-1];
 	}
 	
 	//Accept the medication, give the player feedback and get a new symptom set up
-	accept_medication = function(_patient_obj)
+	function accept_medication(_patient_obj)
 	{
-		
 		//get the current_medication for this patient
 		_med = current_prescription(_patient_obj.patient_id);
 		previous_symptom = _patient_obj.current_symptom;
@@ -36,25 +37,49 @@ function PrescriptionManager()constructor{
 		//Set new symptom
 		if(status)
 		{
+			global.current_patient.image_index = 0;
 			_patient_obj.current_symptom = _med.causes_symptoms[irandom(array_length(_med.causes_symptoms)-1)];
 			global.textbox.dialogue.add(_med.medication_name + ", huh?\nI guess I'll give it\na try.");
 		}
 		else
 		{
-			global.patients[0].image_index = 2;
+			if (sprite_get_number(global.current_patient.sprite) >= 3)
+				global.current_patient.image_index = 2;
 			global.textbox.dialogue.add("Does "+ _med.medication_name + "\neven treat "+previous_symptom+"?\nMaybe I should\nsee someone else.");
-		
 		}
+	}
+	
+	//attempts to perscribe selected medication, if it is a match, med will be perscribed, 
+	//otherwise the pateint will remark that is incorrect, and score will be adjusted.
+	function attempt_prescribe(medication)
+	{
+		patient_symptom = global.current_patient.current_symptom;
+		treats = array_contains(medication.treats_symptoms, patient_symptom);
 		
-		
+		if(treats)
+		{
+			//only prescibe medication if it treats patient
+			prescribe(global.current_patient.patient_id, medication)
+			global.current_patient.image_index = 0;
+			global.current_patient.current_symptom = medication.causes_symptoms[irandom(array_length(medication.causes_symptoms)-1)];
+			global.textbox.dialogue.add(medication.medication_name + ", huh?\nI guess I'll give it\na try.");
+			global.current_patient.exiting_screen = true;
+		}
+		else
+		{
+			if (global.current_patient.patient_id == 0)
+				global.current_patient.image_index = 2;
+			global.textbox.dialogue.add("Does "+ medication.medication_name + "\neven treat " + patient_symptom + "?\nMaybe I should\nsee someone else.");
+		}
+		//Allow the textbox to move to it's next dialogue
+		global.textbox.display_next_dialogue();
 	}
 	
 	//Check treatment status. 1 if the symptom is treated by the most recently described drug. 
-	check_treatment_status = function(_patient_id)
+	function check_treatment_status(_patient_id)
 	{
 		_drug_prescribed = current_prescription(_patient_id);
 		patient_symptom = global.patients[_patient_id].current_symptom;
 		return array_contains(_drug_prescribed.treats_symptoms, patient_symptom);
 	}
-	//Check history of dependence
 }

@@ -8,6 +8,9 @@ global.all_medications = [obj_alprazolam,obj_cetirizine, obj_enobosarm,obj_escit
 global.day_active = false; //True if player should be allowed to switch screens and prescribe medications
 global.start_day = true; //when start day is true, sends first patient out, then is automatically changed back to false.
 
+
+
+
 if(day_num == 0)
 {
 	instance_create_depth(920, 540, 0, obj_tutorial_text_box);
@@ -17,6 +20,7 @@ if(day_num == 0)
 function finish_day()
 {
 	show_debug_message("day complete");
+	
 	//set up the next day
 	day_num += 1;
 	//play an animation or have a results screen showing day is complete and progress or something.
@@ -71,8 +75,6 @@ function prep_day()
 	
 	global.textbox = instance_create_depth(0,0,0, obj_text_box);
 	global.textbox.make_invisible();
-	global.textbox.persistent = true;
-	
 	global.current_patient = global.patients[patient_num];
 }
 

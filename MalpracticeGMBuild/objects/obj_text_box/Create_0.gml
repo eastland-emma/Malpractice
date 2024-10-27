@@ -1,3 +1,4 @@
+persistent = true;
 dialogue = new Dialogue();
 x = 60;
 y = 60;
@@ -6,6 +7,8 @@ event_inherited();
 
 load_new_script = function(_filename)
 {
+	//clear dialouge
+	dialogue = new Dialogue();
 	//Load file
 	text = buffer_load(_filename);
 	//Split file on the new lines
