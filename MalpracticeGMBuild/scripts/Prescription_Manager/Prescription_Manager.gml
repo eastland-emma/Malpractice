@@ -67,7 +67,7 @@ function PrescriptionManager()constructor{
 		}
 		else
 		{
-			if (global.current_patient.patient_id == 0)
+			if (global.current_patient.patient_id == 0) //TODO remove once alt sprites are added.
 				global.current_patient.image_index = 2;
 			global.textbox.dialogue.add("Does "+ medication.medication_name + "\neven treat " + patient_symptom + "?\nMaybe I should\nsee someone else.");
 		}

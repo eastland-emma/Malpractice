@@ -1,3 +1,3 @@
 nadia_script.txt 
-0
-Alaprazolam Cetirizine Enobosarm Lorazepam
+0 
+Alprazolam Cetirizine Enobosarm Lorazepam 
