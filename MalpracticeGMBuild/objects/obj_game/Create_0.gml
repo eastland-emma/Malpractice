@@ -11,6 +11,7 @@ global.all_patients = [];
 //create all patient objects once at the start, use same objects for the whole game
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient0));
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient1));
+array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient2));
 
 global.textbox = instance_create_depth(0,0,0, obj_text_box);
 global.textbox.make_invisible();
@@ -27,7 +28,8 @@ function finish_day()
 	show_debug_message("day complete");
 	
 	//set up the next day
-	day_num += 1;
+	if(day_num<1)//TODO remove when more days are implemented
+		day_num += 1;
 	global.day_active = false;
 	//play an animation or have a results screen showing day is complete and progress or something.
 	
@@ -71,6 +73,12 @@ function prep_day()
 					break;
 				case 1:
 					ds_queue_enqueue(global.patients,global.all_patients[1]);
+					break;
+				case 2:
+					ds_queue_enqueue(global.patients,global.all_patients[2]);
+					break;
+				case -1:
+					ds_queue_enqueue(global.patients,global.all_patients[irandom(2)]);
 					break;
 				default:
 					break;

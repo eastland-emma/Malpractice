@@ -1,3 +1,2 @@
-nadia_script.txt nadia_script.txt 
-1 0 
-Alaprazolam Cetirizine Enobosarm Lorazepam
+default_ask.txt 
+-1 

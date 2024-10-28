@@ -18,8 +18,9 @@ if(global.current_patient.finished)
 		finish_day();
 	else
 	{
-		global.textbox.load_new_script(ds_queue_dequeue(global.scripts));
+		//global.textbox.load_new_script(ds_queue_dequeue(global.scripts));
 		global.current_patient = ds_queue_dequeue(global.patients);
+		global.textbox.load_new_script(ds_queue_dequeue(global.scripts));
 		global.current_patient.speed = 5;
 		global.current_patient.entering_screen = true;
 	}
