@@ -28,8 +28,7 @@ function finish_day()
 	show_debug_message("day complete");
 	
 	//set up the next day
-	if(day_num<1)//TODO remove when more days are implemented
-		day_num += 1;
+	day_num += 1;
 	global.day_active = false;
 	//play an animation or have a results screen showing day is complete and progress or something.
 	

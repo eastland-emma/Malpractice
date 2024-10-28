@@ -21,6 +21,18 @@ if(global.current_patient.finished)
 		//global.textbox.load_new_script(ds_queue_dequeue(global.scripts));
 		global.current_patient = ds_queue_dequeue(global.patients);
 		global.textbox.load_new_script(ds_queue_dequeue(global.scripts));
+		if(global.current_patient.patient_id == 0)
+		{
+			object_set_sprite(obj_text_box, spr_textbox_nadia);
+			global.textbox.image_xscale =10;
+			global.textbox.image_yscale =10;
+		}
+		else
+		{
+			object_set_sprite(obj_text_box, spr_textbox);
+			global.textbox.image_xscale =1;
+			global.textbox.image_yscale =1;
+		}
 		global.current_patient.speed = 5;
 		global.current_patient.entering_screen = true;
 	}
