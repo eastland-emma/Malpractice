@@ -45,8 +45,9 @@ function PrescriptionManager()constructor{
 		}
 		else
 		{
-			//if (sprite_get_number(global.current_patient.sprite) >= 2)
-				//global.current_patient.image_index = 2;
+			
+			global.current_patient.image_index = 2;
+			show_debug_message(string(global.current_patient.image_index));
 			global.textbox.dialogue.add("Does "+ _med.medication_name + "\neven treat "+previous_symptom+"?\nMaybe I should\nsee someone else.");
 		}
 	}
@@ -72,8 +73,7 @@ function PrescriptionManager()constructor{
 		else
 		{
 			show_debug_message(global.current_patient.name_first);
-			if (global.current_patient.patient_id == 0) //TODO remove once alt sprites are added.
-				global.current_patient.image_index = 2;
+			global.current_patient.image_index = 2;
 			global.textbox.dialogue.add("Does "+ _medication.medication_name + "\neven treat " + patient_symptom + "?\nMaybe I should\nsee someone else.");
 		}
 		//Allow the textbox to move to it's next dialogue
