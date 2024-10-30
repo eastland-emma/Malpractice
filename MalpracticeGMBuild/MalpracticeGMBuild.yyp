@@ -35,7 +35,6 @@
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"aria_intro.txt","CopyToMask":-1,"filePath":"datafiles","name":"aria_intro.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"day0.txt","CopyToMask":-1,"filePath":"datafiles","name":"day0.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
-    {"$GMIncludedFile":"","%Name":"day1.txt","CopyToMask":-1,"filePath":"datafiles","name":"day1.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"default_ask.txt","CopyToMask":-1,"filePath":"datafiles","name":"default_ask.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"gretsch_intro.txt","CopyToMask":-1,"filePath":"datafiles","name":"gretsch_intro.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
     {"$GMIncludedFile":"","%Name":"nadia_script.txt","CopyToMask":-1,"filePath":"datafiles","name":"nadia_script.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
@@ -44,7 +43,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"MalpracticeGMBuild",
   "resources":[

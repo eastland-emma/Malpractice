@@ -67,6 +67,7 @@ function PrescriptionManager()constructor{
 			global.current_patient.current_symptom = _medication.causes_symptoms[irandom(array_length(_medication.causes_symptoms)-1)];
 			global.textbox.dialogue.add(_medication.medication_name + ", huh?\nI guess I'll give it\na try.");
 			global.current_patient.exiting_screen = true;
+			global.day_active = false;
 		}
 		else
 		{
