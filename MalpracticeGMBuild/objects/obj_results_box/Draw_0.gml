@@ -1,7 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 draw_self();
+if(!played_click)
+{
 audio_play_sound(snd_mouse_click,0,false);
+played_click = true;
+}
 //draw_set_color(c_navy);
 //draw_set_font(fnt_main_h2);
 //draw_text(x + 50, y + 80, global.med_info.name + ":");
