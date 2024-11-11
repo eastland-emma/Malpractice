@@ -111,7 +111,7 @@ function prep_day()
 	//load first patient
 	global.current_patient = ds_queue_dequeue(global.patients);
 	//load first character script into text box
-	global.textbox.load_new_script(ds_queue_dequeue(global.scripts))
+	global.textbox.load_new_script(ds_queue_dequeue(global.scripts), global.current_patient.patient_id);
 }
 
 prep_day();

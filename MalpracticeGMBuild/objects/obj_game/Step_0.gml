@@ -21,7 +21,7 @@ if(global.current_patient.finished)
 	{
 		//global.textbox.load_new_script(ds_queue_dequeue(global.scripts));
 		global.current_patient = ds_queue_dequeue(global.patients);
-		global.textbox.load_new_script(ds_queue_dequeue(global.scripts));
+		global.textbox.load_new_script(ds_queue_dequeue(global.scripts),global.current_patient.patient_id);
 		if(global.current_patient.patient_id == 0)
 		{
 			object_set_sprite(obj_text_box, spr_textbox_nadia);

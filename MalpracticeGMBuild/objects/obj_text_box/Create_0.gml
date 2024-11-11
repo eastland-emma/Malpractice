@@ -6,8 +6,19 @@ symptom_reveal = -1;
 
 event_inherited();
 
-function load_new_script(_filename)
+function load_new_script(_filename, characterID)
 {
+	switch(characterID)
+	{
+	case 0:
+		sprite_index = spr_textbox_nadia;
+		break;
+	case 1:
+		sprite_index = spr_textbox;
+		break;
+	case 2:
+		sprite_index = spr_textbox_gretsch;
+	}
 	//clear dialouge
 	dialogue = new Dialogue();
 	//Load file
