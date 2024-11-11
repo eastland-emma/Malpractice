@@ -26,6 +26,7 @@ if(entering_screen)//If entering the screen
 	
 	//wait until she stops and spawn the textbox
 	if (speed == 0 && x > 500){
+		global.textbox.display_next_dialogue();
 		global.textbox.make_visible();
 		entering_screen = false;
 		global.day_active = true;

@@ -7,6 +7,11 @@ global.all_medications = [obj_alprazolam,obj_cetirizine, obj_enobosarm,obj_escit
 global.day_active = false; //True if player should be allowed to switch screens and prescribe medications
 global.start_day = true; //when start day is true, sends first patient out, then is automatically changed back to false.
 global.all_patients = [];
+global.day_num = 0;
+global.patients_seen = 0;
+global.prescriptions_given = 0;
+global.symptom = "none";
+global.symptom_box = instance_create_depth(400, 900, 0, obj_symptom_box);
 
 //create all patient objects once at the start, use same objects for the whole game
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient0));
@@ -17,7 +22,7 @@ global.textbox = instance_create_depth(0,0,0, obj_text_box);
 global.textbox.make_invisible();
 
 
-if(day_num == 0)
+if(global.day_num == 0)
 {
 	instance_create_depth(920, 540, 0, obj_tutorial_text_box);
 	global.start_day = false;
@@ -28,7 +33,9 @@ function finish_day()
 	show_debug_message("day complete");
 	
 	//set up the next day
-	day_num += 1;
+	global.symptom_box.visible = false;
+	instance_create_depth(400, 100, 0, obj_results_box)
+	global.day_num += 1;
 	global.day_active = false;
 	//play an animation or have a results screen showing day is complete and progress or something.
 	
@@ -36,7 +43,7 @@ function finish_day()
 	 
 	prep_day(); 
 	
-	global.start_day = true;
+	//global.start_day = true;
 }
 
 function prep_day()
@@ -44,7 +51,7 @@ function prep_day()
 	// Create a global array of patients for the day so we refer to the same one every time
 	global.patients = ds_queue_create();
 	global.scripts = ds_queue_create();
-	var todaysFilename = "day" + string(day_num) + ".txt";
+	var todaysFilename = "day" + string(global.day_num) + ".txt";
 	//try to Load day file
 	try
 	{
@@ -99,6 +106,7 @@ function prep_day()
 		global.selected_medications = []; //use all medications (med controller handles this)
 		
 	}
+	global.patients_seen = ds_queue_size(global.patients);
 	
 	//load first patient
 	global.current_patient = ds_queue_dequeue(global.patients);
@@ -107,3 +115,4 @@ function prep_day()
 }
 
 prep_day();
+//instance_create_depth(400, 100, 0, obj_results_box)  //for testing

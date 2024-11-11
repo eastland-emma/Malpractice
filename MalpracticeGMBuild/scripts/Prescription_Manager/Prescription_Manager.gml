@@ -62,6 +62,8 @@ function PrescriptionManager()constructor{
 		
 		if(treats)
 		{
+			show_debug_message("make box invis");
+			global.symptom_box.visible = false;
 			//only prescibe medication if it treats patient
 			prescribe(global.current_patient.patient_id, _medication)
 			global.current_patient.image_index = 0;

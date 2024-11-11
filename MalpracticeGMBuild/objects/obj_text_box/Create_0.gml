@@ -2,6 +2,7 @@ persistent = true;
 dialogue = new Dialogue();
 x = 60;
 y = 60;
+symptom_reveal = -1;
 
 event_inherited();
 
@@ -16,6 +17,7 @@ function load_new_script(_filename)
 	strings = string_split(buffer_read(text,buffer_string), "\n");
 	file_find_close();
 	lines = array_length(strings);
+	show_debug_message("length of lines: " + string(lines));
 	//Process each sentence
 	for(var i = 0; i < lines; i++)
 	{
@@ -29,6 +31,9 @@ function load_new_script(_filename)
 			if(string_char_at(_word, 0) == "*")
 			{
 				_word = global.current_patient.current_symptom;
+				dialogue.set_symptom_reveal(i);
+				global.symptom = _word;
+				show_debug_message("reveal set to " + string(i));
 			}
 			if(string_length(_word) + _line_count > max_line_size)
 			{
@@ -46,7 +51,7 @@ function load_new_script(_filename)
 	{
 		dialogue.add(strings[i]);
 	}
-	current_dialogue = dialogue.pop();
+	//current_dialogue = dialogue.pop();
 }
 
 display_next_dialogue = function()

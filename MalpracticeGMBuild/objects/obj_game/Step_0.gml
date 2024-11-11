@@ -13,6 +13,7 @@ if(global.current_patient.finished)
 	//freeze controls when patient is leaving
 	global.day_active = false;
 	global.current_patient.finished = false;
+	global.symptom_box.visible = false;
 	show_debug_message("patient finished \n");
 	if(ds_queue_empty(global.patients)) //all patients have been seen
 		finish_day();
