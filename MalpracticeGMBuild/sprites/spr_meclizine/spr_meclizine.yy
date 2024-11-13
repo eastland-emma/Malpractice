@@ -23,7 +23,7 @@
   ],
   "name":"spr_meclizine",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"Medications",
     "path":"folders/Sprites/Medications.yy",
@@ -76,7 +76,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":50,
-    "yorigin":90,
+    "yorigin":105,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
