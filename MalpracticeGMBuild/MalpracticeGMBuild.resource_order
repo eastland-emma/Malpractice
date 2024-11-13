@@ -24,6 +24,7 @@
   ],
   "ResourceOrderSettings":[
     {"name":"fnt_main_results","order":1,"path":"fonts/fnt_main_results/fnt_main_results.yy",},
+    {"name":"fnt_main_title_real","order":3,"path":"fonts/fnt_main_title_real/fnt_main_title_real.yy",},
     {"name":"fnt_main_title","order":2,"path":"fonts/fnt_main_title/fnt_main_title.yy",},
     {"name":"obj_cetirizine","order":4,"path":"objects/obj_cetirizine/obj_cetirizine.yy",},
     {"name":"obj_computer","order":13,"path":"objects/obj_computer/obj_computer.yy",},

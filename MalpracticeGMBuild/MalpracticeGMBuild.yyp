@@ -56,12 +56,13 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"MalpracticeGMBuild",
   "resources":[
     {"id":{"name":"fnt_main_h2","path":"fonts/fnt_main_h2/fnt_main_h2.yy",},},
     {"id":{"name":"fnt_main_results","path":"fonts/fnt_main_results/fnt_main_results.yy",},},
+    {"id":{"name":"fnt_main_title_real","path":"fonts/fnt_main_title_real/fnt_main_title_real.yy",},},
     {"id":{"name":"fnt_main_title","path":"fonts/fnt_main_title/fnt_main_title.yy",},},
     {"id":{"name":"fnt_main","path":"fonts/fnt_main/fnt_main.yy",},},
     {"id":{"name":"obj_alprazolam","path":"objects/obj_alprazolam/obj_alprazolam.yy",},},
