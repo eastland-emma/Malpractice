@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"symptom_box",
-    "path":"sprites/symptom_box/symptom_box.yy",
+    "name":"spr_symptom_box",
+    "path":"sprites/spr_symptom_box/spr_symptom_box.yy",
   },
   "spriteMaskId":null,
   "visible":true,

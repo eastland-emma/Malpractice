@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_text_box",
-    "path":"sprites/spr_text_box/spr_text_box.yy",
+    "name":"spr_textbox_tutorial",
+    "path":"sprites/spr_textbox_tutorial/spr_textbox_tutorial.yy",
   },
   "spriteMaskId":null,
   "visible":true,

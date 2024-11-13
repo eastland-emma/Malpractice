@@ -28,7 +28,7 @@ if (prev_med_info != global.med_info.name)
 	}
 }
 
-draw_set_color(c_navy);
+draw_set_color(c_ltgray);
 draw_set_font(fnt_main_h2);
 draw_text(x + 50, y + 80, global.med_info.name + ":");
 draw_set_color(c_white);

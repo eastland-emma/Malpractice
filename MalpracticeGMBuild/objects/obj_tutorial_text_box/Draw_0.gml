@@ -7,4 +7,4 @@
 
 	draw_set_color(c_white);
 
-	obj_tutorial_text_box.draw_text_scrolling(x + 50,y + 80,current_dialogue, 0.5, 1);
+	obj_tutorial_text_box.draw_text_scrolling(x + 50,y + 80,current_dialogue, 0.75, 1);
