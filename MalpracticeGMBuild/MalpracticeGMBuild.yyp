@@ -90,6 +90,7 @@
     {"id":{"name":"obj_patient3","path":"objects/obj_patient3/obj_patient3.yy",},},
     {"id":{"name":"obj_propranolol","path":"objects/obj_propranolol/obj_propranolol.yy",},},
     {"id":{"name":"obj_results_box","path":"objects/obj_results_box/obj_results_box.yy",},},
+    {"id":{"name":"obj_searchbar","path":"objects/obj_searchbar/obj_searchbar.yy",},},
     {"id":{"name":"obj_symptom_box","path":"objects/obj_symptom_box/obj_symptom_box.yy",},},
     {"id":{"name":"obj_testosterone_cypionate","path":"objects/obj_testosterone_cypionate/obj_testosterone_cypionate.yy",},},
     {"id":{"name":"obj_text_box","path":"objects/obj_text_box/obj_text_box.yy",},},
