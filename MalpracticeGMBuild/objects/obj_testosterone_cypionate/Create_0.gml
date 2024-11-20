@@ -5,4 +5,4 @@
 event_inherited();
 
 treats_symptoms = ["fat loss", "weakness", "muscle growth"];
-causes_symptoms = ["liver toxicity", "mood swings", "acne","hair loss"];
+causes_symptoms = ["mood swings", "acne","hair loss", "cholesterol imbalance"];

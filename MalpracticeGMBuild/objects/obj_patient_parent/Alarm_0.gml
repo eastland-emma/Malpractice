@@ -14,4 +14,4 @@ is_up = true;
 image_index = 0;
 visible = true;
 
-global.textbox.load_new_script(global.script_name);
+global.textbox.load_new_script(global.script_name, -1);

@@ -5,4 +5,4 @@
 event_inherited();
 
 treats_symptoms = ["inflammation","asthma","allergies"];
-causes_symptoms = ["headache", "stomach pain", "drowsiness", "insomnia"];
+causes_symptoms = ["headache", "drowsiness", "mood swings", "insomnia"];

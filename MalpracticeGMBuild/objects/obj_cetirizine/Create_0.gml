@@ -5,5 +5,5 @@
 event_inherited();
 
 treats_symptoms = ["runny nose", "sneezing", "eye irritation", "rash"];
-causes_symptoms = ["drowsiness", "dizziness", "nausea"];
+causes_symptoms = ["drowsiness", "dizziness", "nausea", "dry mouth"];
 

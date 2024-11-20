@@ -4,5 +4,5 @@
 // Inherit the parent event
 event_inherited();
 treats_symptoms = ["drowsiness", "confusion", "lack of focus"];
-causes_symptoms = [ "nausea", "anxiety"];
+causes_symptoms = ["nausea", "anxiety","dry mouth", "insomnia","headache"];
 
