@@ -17,6 +17,7 @@ global.symptom_box = instance_create_depth(400, 900, 0, obj_symptom_box);
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient0));
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient1));
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient2));
+array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient3));
 
 global.textbox = instance_create_depth(0,0,0, obj_text_box);
 global.textbox.make_invisible();
@@ -82,6 +83,9 @@ function prep_day()
 					break;
 				case 2:
 					ds_queue_enqueue(global.patients,global.all_patients[2]);
+					break;
+				case 3:
+					ds_queue_enqueue(global.patients,global.all_patients[3]);
 					break;
 				case -1:
 					ds_queue_enqueue(global.patients,global.all_patients[irandom(2)]);

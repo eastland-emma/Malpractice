@@ -18,6 +18,10 @@ function load_new_script(_filename, characterID)
 		break;
 	case 2:
 		sprite_index = spr_textbox_gretsch;
+		break;
+	case 3:
+		sprite_index = spr_textbox_max
+		break;
 	}
 	//clear dialouge
 	dialogue = new Dialogue();

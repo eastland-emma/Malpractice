@@ -3,8 +3,8 @@
   "%Name":"spr_patient3",
   "bboxMode":0,
   "bbox_bottom":1079,
-  "bbox_left":141,
-  "bbox_right":882,
+  "bbox_left":51,
+  "bbox_right":1698,
   "bbox_top":56,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,18 +12,19 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a9bfb04b-1a98-479f-84c4-c565647927f1","name":"a9bfb04b-1a98-479f-84c4-c565647927f1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"d0d1fd3f-4621-4f8c-878c-2cc1aa73b9da","name":"d0d1fd3f-4621-4f8c-878c-2cc1aa73b9da","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"3d9c943f-90f0-4b2b-8777-c6e4520d9903","name":"3d9c943f-90f0-4b2b-8777-c6e4520d9903","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":1080,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"591323db-e299-429b-8b60-5dc1e1c10d68","blendMode":0,"displayName":"default","isLocked":false,"name":"591323db-e299-429b-8b60-5dc1e1c10d68","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"bf9017f6-807b-4e3f-92b2-995634c6ea73","blendMode":0,"displayName":"default","isLocked":false,"name":"bf9017f6-807b-4e3f-92b2-995634c6ea73","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_patient3",
   "nineSlice":null,
-  "origin":7,
+  "origin":9,
   "parent":{
     "name":"Patients",
     "path":"folders/Sprites/Patients.yy",
@@ -49,7 +50,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":1.0,
+    "length":2.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -69,14 +70,17 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a9bfb04b-1a98-479f-84c4-c565647927f1","path":"sprites/spr_patient3/spr_patient3.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b827c010-58e1-4987-ac85-ea78a061d31d","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"d0d1fd3f-4621-4f8c-878c-2cc1aa73b9da","path":"sprites/spr_patient3/spr_patient3.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c79f97f5-f2d2-4750-b0fa-9fe87895be0b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3d9c943f-90f0-4b2b-8777-c6e4520d9903","path":"sprites/spr_patient3/spr_patient3.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"331f98bf-c2a7-4770-b5ef-fc58ad601bb8","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":540,
-    "yorigin":1080,
+    "xorigin":866,
+    "yorigin":850,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
@@ -86,5 +90,5 @@
   },
   "type":0,
   "VTile":false,
-  "width":1080,
+  "width":1750,
 }

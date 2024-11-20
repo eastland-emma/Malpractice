@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_patient2",
-    "path":"sprites/spr_patient2/spr_patient2.yy",
+    "name":"spr_patient3",
+    "path":"sprites/spr_patient3/spr_patient3.yy",
   },
   "spriteMaskId":null,
   "visible":true,
