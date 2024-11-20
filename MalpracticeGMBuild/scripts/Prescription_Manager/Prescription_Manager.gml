@@ -11,8 +11,9 @@ function PrescriptionManager()constructor{
 	patient0 = [];
 	patient1 = [];
 	patient2 = [];
+	patient3 = [];
 	
-	patients = [patient0,patient1,patient2];
+	patients = [patient0,patient1,patient2, patient3];
 	
 	//Add a new medication to the patients list of medication
 	function prescribe(_patient_id, _medication)
