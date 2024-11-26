@@ -30,6 +30,7 @@
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"medication_name","filters":[],"listItems":[],"multiselect":false,"name":"medication_name","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"default\"","varType":2,},
     {"$GMObjectProperty":"v1","%Name":"medication_info","filters":[],"listItems":[],"multiselect":false,"name":"medication_info","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"\"Here is a basic blurb on the medication\"","varType":2,},
+    {"$GMObjectProperty":"v1","%Name":"looked_up","filters":[],"listItems":[],"multiselect":false,"name":"looked_up","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",

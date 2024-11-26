@@ -1,12 +1,14 @@
 Welcome to Malpractice! Press space to continue.
-After you finish talking to your patient, you will be able to move to the medicine room.
+Your job is to listen to patients, and prescribe them medications to help cure their described symptoms.
+But all medications have side effects, or as you like to call them, opportunities.
+Patients will return to the pharmacy each day with new side effects. As any self respecting pharmacist knows, you can't say no to patients in need, right?
+After you finish talking to a patient, you will be able to move to the medicine room by clicking the arrow.
 +
 When you are in the medicine room, hover over a medication to receive basic information about the drug.
-If you still want more information about a drug, click on the computer to get more information.
-Using the computer takes time. For you, time is money. 
-Make sure to use the computer when you want to know exactly what symptoms a medication treats and causes.
-Some medications are used to treat symptoms that are pretty different from their general uses.
-If you are confused, try looking it up.
+If you'd like more explicit information regarding what a drug treats, click on the computer to get more information.
+Using the computer to research a drug takes time. For you, time is money. Looking up medicine reduces your score.  
+However, prescribing the wrong medicine is even worse! Use the computer when you want to know exactly what symptoms a medication treats.
+If you leave the medicine room, any medication information you researched will be lost! You can always look it up again, but at the expense of your score.
 We'll head back to the lobby
 -
 Your first patient is about to come in.

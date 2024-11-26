@@ -3,3 +3,4 @@
 day = global.day_num;
 patients_seen = global.patients_seen;
 prescriptions_given = global.prescriptions_given;
+medicine_lookups = global.medicine_lookups;
