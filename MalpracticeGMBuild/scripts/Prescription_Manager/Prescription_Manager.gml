@@ -60,6 +60,8 @@ function PrescriptionManager()constructor{
 		patient_symptom = global.current_patient.current_symptom;
 		treats = array_contains(_medication.treats_symptoms, patient_symptom);
 		show_debug_message(global.current_patient.patient_id);
+		global.textbox.dialogue.clear(); //we're about to give the character new text that needs to be seen, if
+		// if the player hasn't finished the dialouge yet, remove it so new dialouge can be seen
 		
 		if(treats)
 		{
@@ -76,6 +78,7 @@ function PrescriptionManager()constructor{
 		else
 		{
 			show_debug_message(global.current_patient.name_first);
+			global.symptom_box.visible = true;
 			global.current_patient.image_index = 2;
 			global.textbox.dialogue.add("Does "+ _medication.medication_name + "\neven treat " + patient_symptom + "?\nMaybe I should\nsee someone else.");
 		}

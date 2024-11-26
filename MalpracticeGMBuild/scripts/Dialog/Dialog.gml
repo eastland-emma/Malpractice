@@ -32,6 +32,12 @@ function Dialogue() constructor
 		return array_length(queued_dialog);
 	}
 	
+	//empties text for the dialouge
+	clear = function()
+	{
+		queued_dialog = [];
+	}
+	
 	set_symptom_reveal = function(reveal)
 	{
 		symptom_reveal = reveal + 1;
