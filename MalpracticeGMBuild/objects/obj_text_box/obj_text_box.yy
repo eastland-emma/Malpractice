@@ -10,8 +10,8 @@
   "name":"obj_text_box",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"GUI",
+    "path":"folders/Objects/GUI.yy",
   },
   "parentObjectId":{
     "name":"obj_text_parent",

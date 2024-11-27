@@ -8,8 +8,8 @@
   "name":"obj_text_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"ControlStructures",
+    "path":"folders/Objects/ControlStructures.yy",
   },
   "parentObjectId":null,
   "persistent":false,

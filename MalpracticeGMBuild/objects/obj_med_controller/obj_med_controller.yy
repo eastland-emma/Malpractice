@@ -9,8 +9,8 @@
   "name":"obj_med_controller",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"ControlStructures",
+    "path":"folders/Objects/ControlStructures.yy",
   },
   "parentObjectId":{
     "name":"obj_text_parent",

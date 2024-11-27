@@ -10,8 +10,8 @@
   "name":"obj_med_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"ControlStructures",
+    "path":"folders/Objects/ControlStructures.yy",
   },
   "parentObjectId":null,
   "persistent":false,
