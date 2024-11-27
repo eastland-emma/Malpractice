@@ -24,5 +24,19 @@ if(global.current_patient.finished)
 		global.textbox.load_new_script(ds_queue_dequeue(global.scripts),global.current_patient.patient_id);
 		global.current_patient.speed = 5;
 		global.current_patient.entering_screen = true;
+		switch(global.current_patient.patient_id)
+		{
+			case 0:
+				break;
+			case 1:
+				audio_play_sound(snd_aria_arrive, 1,false);
+				break;
+			case 2:
+				audio_play_sound(snd_gretsch_arrive, 1,false);
+				break;
+			default:
+				break;
+			
+		}
 	}
 }

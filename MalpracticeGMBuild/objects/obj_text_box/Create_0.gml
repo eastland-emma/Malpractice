@@ -14,10 +14,10 @@ function load_new_script(_filename, characterID)
 		sprite_index = spr_textbox_nadia;
 		break;
 	case 1:
-		sprite_index = spr_textbox;
+		sprite_index = spr_textbox_gretsch;
 		break;
 	case 2:
-		sprite_index = spr_textbox_gretsch;
+		sprite_index = spr_textbox_aria;
 		break;
 	case 3:
 		sprite_index = spr_textbox_max

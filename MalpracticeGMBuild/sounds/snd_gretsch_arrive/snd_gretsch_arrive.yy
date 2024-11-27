@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":0.0,
+  "duration":4.414694,
   "name":"snd_gretsch_arrive",
   "parent":{
     "name":"Sounds",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_gretsch_arrive",
+  "soundFile":"snd_gretsch_arrive.wav",
   "type":0,
   "volume":1.0,
 }

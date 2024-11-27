@@ -3,7 +3,7 @@ global.script_name = "nadia_script.txt";
 // Create a prescription manager to track everyones current and past prescriptions
 global.prescription_manager = new PrescriptionManager();
 global.selected_medications = [];
-global.all_medications = [obj_alprazolam,obj_cetirizine, obj_enobosarm,obj_escitalopram, obj_ligandrol,obj_loratadine, obj_lorazepam, obj_methandrostenolone, obj_modafinil,obj_montelukast,obj_propranolol,obj_testosterone_cypionate,obj_meclizine,obj_ondansetron];//Add in more medications as they are made
+global.all_medications = [obj_alprazolam,obj_cetirizine, obj_enobosarm,obj_escitalopram, obj_ligandrol,obj_loratadine, obj_lorazepam, obj_methandrostenolone, obj_modafinil,obj_montelukast,obj_propranolol,obj_testosterone_cypionate,obj_meclizine,obj_ondansetron,obj_acetazolamide,obj_atorvastatin,obj_doxepin,obj_doxycycline,obj_loperamide,obj_pilocarpine, obj_sumatriptan];//Add in more medications as they are made
 global.day_active = false; //True if player should be allowed to switch screens and prescribe medications
 global.start_day = false; //when start day is true, sends first patient out, then is automatically changed back to false.
 global.all_patients = [];
@@ -19,6 +19,7 @@ array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient1));
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient2));
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient3));
+array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient4));
 
 global.textbox = instance_create_depth(0,0,0, obj_text_box);
 global.textbox.make_invisible();
@@ -88,8 +89,11 @@ function prep_day()
 				case 3:
 					ds_queue_enqueue(global.patients,global.all_patients[3]);
 					break;
+				case 4:
+					ds_queue_enqueue(global.patients,global.all_patients[4]);
+					break;
 				case -1:
-					ds_queue_enqueue(global.patients,global.all_patients[irandom(2)]);
+					ds_queue_enqueue(global.patients,global.all_patients[irandom(4)]);
 					break;
 				default:
 					break;
