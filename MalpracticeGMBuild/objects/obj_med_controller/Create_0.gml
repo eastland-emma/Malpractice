@@ -1,5 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
+global.current_med = noone;
 global.med_info = {name: "Select medicine", 
 				   info: "Hover for more details, click the medication to prescribe."};
 prev_med_info = "start";

@@ -2,10 +2,10 @@
 // You can write your code in this editor
 
 draw_self();
-if (prev_med_info != global.med_info.name)
+if (prev_med_info != global.med_info.info)
 {
 	draw_text_reset();
-	prev_med_info = global.med_info.name;
+	prev_med_info = global.med_info.info;
 	
 	lines = string_length(global.med_info.info);
 	for(var i = 0; i < lines; i++)
