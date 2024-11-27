@@ -4,5 +4,5 @@
 // Inherit the parent event
 event_inherited();
 
-treats_symptoms = ["fat loss", "weakness", "muscle growth"];
+treats_symptoms = ["weight gain", "weakness", "muscle growth"];
 causes_symptoms = ["mood swings", "acne","hair loss", "cholesterol imbalance"];
