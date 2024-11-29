@@ -22,6 +22,7 @@
 ///     The sound to play after each character scroll. (Ex. [undefined] [sound_talk])
  
 //########################################################
+scrolling = true;
 function draw_text_scrolling(text_x, text_y, text_str, text_spd, text_slp, text_snd){
  
     #region SOURCE CODE
@@ -90,7 +91,10 @@ function draw_text_scrolling(text_x, text_y, text_str, text_spd, text_slp, text_
         }
     
     }
- 
+	if(text_str == string_copy(text_str, 1, text_ind))
+	{
+		scrolling = false;
+	}
     //Draws the scrolling text.
     draw_text(text_x, text_y, string_copy(text_str, 1, text_ind));
  

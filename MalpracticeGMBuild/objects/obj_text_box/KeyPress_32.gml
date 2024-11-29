@@ -3,9 +3,15 @@ if((room != room_first) || !visible)
 {
 	return;
 }
+if (scrolling)
+{
+	scrolling = false;
+	return;
+}
 audio_play_sound(snd_mouse_click,0,false);
 if (dialogue.count() > 0){
 	display_next_dialogue();
+	scrolling = true;
 	if(global.current_patient.patient_id == 3)
 	{
 		if(global.current_patient.image_index == 1)
