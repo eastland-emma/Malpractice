@@ -6,6 +6,7 @@ if (global.current_med.looked_up == true or !global.day_active) //if med has alr
 	return;
 else
 {
+	global.score -= 20;
 	audio_play_sound(snd_lookup,0,false);
 	global.current_med.look_up();
 	global.medicine_lookups++;

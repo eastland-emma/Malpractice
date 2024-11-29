@@ -59,7 +59,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.8.1.171",
+    "IDEVersion":"2024.6.2.162",
   },
   "name":"MalpracticeGMBuild",
   "resources":[
@@ -103,6 +103,7 @@
     {"id":{"name":"obj_playbtn","path":"objects/obj_playbtn/obj_playbtn.yy",},},
     {"id":{"name":"obj_propranolol","path":"objects/obj_propranolol/obj_propranolol.yy",},},
     {"id":{"name":"obj_results_box","path":"objects/obj_results_box/obj_results_box.yy",},},
+    {"id":{"name":"obj_score_box","path":"objects/obj_score_box/obj_score_box.yy",},},
     {"id":{"name":"obj_sumatriptan","path":"objects/obj_sumatriptan/obj_sumatriptan.yy",},},
     {"id":{"name":"obj_symptom_box","path":"objects/obj_symptom_box/obj_symptom_box.yy",},},
     {"id":{"name":"obj_testosterone_cypionate","path":"objects/obj_testosterone_cypionate/obj_testosterone_cypionate.yy",},},
@@ -152,6 +153,7 @@
     {"id":{"name":"spr_patient4","path":"sprites/spr_patient4/spr_patient4.yy",},},
     {"id":{"name":"spr_pilocarpine","path":"sprites/spr_pilocarpine/spr_pilocarpine.yy",},},
     {"id":{"name":"spr_propranolol","path":"sprites/spr_propranolol/spr_propranolol.yy",},},
+    {"id":{"name":"spr_score_box","path":"sprites/spr_score_box/spr_score_box.yy",},},
     {"id":{"name":"spr_sumatriptan","path":"sprites/spr_sumatriptan/spr_sumatriptan.yy",},},
     {"id":{"name":"spr_symptom_box","path":"sprites/spr_symptom_box/spr_symptom_box.yy",},},
     {"id":{"name":"spr_testosteronecypionate","path":"sprites/spr_testosteronecypionate/spr_testosteronecypionate.yy",},},

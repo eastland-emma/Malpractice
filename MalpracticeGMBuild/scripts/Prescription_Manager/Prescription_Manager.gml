@@ -69,6 +69,7 @@ function PrescriptionManager()constructor{
 			global.symptom_box.visible = false;
 			//only prescibe medication if it treats patient
 			prescribe(global.current_patient.patient_id, _medication)
+			global.score += 100;
 			global.current_patient.image_index = 0;
 			global.current_patient.current_symptom = _medication.causes_symptoms[irandom(array_length(_medication.causes_symptoms)-1)];
 			global.textbox.dialogue.add(_medication.medication_name + ", huh?\nI guess I'll give it\na try.");
@@ -77,6 +78,7 @@ function PrescriptionManager()constructor{
 		}
 		else
 		{
+			global.score -= 50;
 			show_debug_message(global.current_patient.name_first);
 			global.symptom_box.visible = true;
 			global.current_patient.image_index = 2;

@@ -13,6 +13,7 @@ global.prescriptions_given = 0;
 global.symptom = "none";
 global.symptom_box = instance_create_depth(400, 900, 0, obj_symptom_box);
 global.medicine_lookups = 0;
+global.score = 0;
 
 //create all patient objects once at the start, use same objects for the whole game
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient0));
@@ -115,7 +116,6 @@ function prep_day()
 		global.selected_medications = []; //use all medications (med controller handles this)
 		
 	}
-	global.patients_seen = ds_queue_size(global.patients);
 	
 	//load first patient
 	global.current_patient = ds_queue_dequeue(global.patients);

@@ -14,6 +14,7 @@ if(global.current_patient.finished)
 	global.day_active = false;
 	global.current_patient.finished = false;
 	global.symptom_box.visible = false;
+	global.patients_seen++;
 	show_debug_message("patient finished \n");
 	if(ds_queue_empty(global.patients)) //all patients have been seen
 		finish_day();
