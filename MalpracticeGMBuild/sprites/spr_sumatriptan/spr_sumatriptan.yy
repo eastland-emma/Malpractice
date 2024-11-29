@@ -1,7 +1,7 @@
 {
   "$GMSprite":"",
   "%Name":"spr_sumatriptan",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":110,
   "bbox_left":0,
   "bbox_right":149,
