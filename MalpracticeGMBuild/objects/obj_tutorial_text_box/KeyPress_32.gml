@@ -15,5 +15,6 @@ if (dialogue.count() > 0){
 else
 {
 	global.start_day = true;
+	global.display_score = true;
 	instance_destroy(self);
 }

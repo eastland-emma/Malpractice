@@ -5,4 +5,5 @@ global.prescriptions_given = 0;
 global.patients_seen = 0;
 global.medicine_lookups = 0;
 global.score = 0;
+global.display_score = true;
 instance_destroy(self);

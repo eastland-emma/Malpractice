@@ -14,6 +14,7 @@ global.symptom = "none";
 global.symptom_box = instance_create_depth(400, 900, 0, obj_symptom_box);
 global.medicine_lookups = 0;
 global.score = 0;
+global.display_score = false;
 
 //create all patient objects once at the start, use same objects for the whole game
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient0));
@@ -41,6 +42,7 @@ function finish_day()
 	instance_create_depth(400, 100, 0, obj_results_box)
 	global.day_num += 1;
 	global.day_active = false;
+	global.display_score = false;
 	//play an animation or have a results screen showing day is complete and progress or something.
 	
 	//start the next day.
