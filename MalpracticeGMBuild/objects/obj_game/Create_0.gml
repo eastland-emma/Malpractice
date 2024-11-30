@@ -15,6 +15,7 @@ global.symptom_box = instance_create_depth(400, 900, 0, obj_symptom_box);
 global.medicine_lookups = 0;
 global.score = 0;
 global.display_score = false;
+global.correct_prescriptions_given = 0;
 
 //create all patient objects once at the start, use same objects for the whole game
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient0));
@@ -69,15 +70,27 @@ function prep_day()
 		//Process each sentence
 		files = string_split(strings[0], " ");
 		//Line 1 contains the names of files we need to read in
-		for(var j = 0; j < array_length(files); j++)
-		{
-			var _file = files[j];
-			ds_queue_enqueue(global.scripts, _file);
-		}
+		//for(var j = 0; j < array_length(files); j++)
+		//{
+		//	var _file = files[j];
+		//	ds_queue_enqueue(global.scripts, _file);
+		//}
 		//Line 2 contains patient ids
 		ids = string_split(strings[1], " ");
 		for(var j = 0; j < array_length(ids); j++)
 		{
+			if(global.all_patients[real(ids[j])].lost)
+			{
+				show_debug_message("patient " + string(ids[j]) + " has been lost and won't be included today.");
+				continue;
+			}
+			
+			global.all_patients[real(ids[j])].image_index = 0;
+			
+			//add scripts and patient only if patient hasn't been lost
+			var _file = files[j];
+		  	ds_queue_enqueue(global.scripts, _file);
+				
 			switch(ids[j])
 			{
 				case 0: 
@@ -112,7 +125,8 @@ function prep_day()
 		global.patients = ds_queue_create(); //use all patients
 		for (i = 0; i < array_length(global.all_patients); i++)
 		{
-			ds_queue_enqueue(global.patients, global.all_patients[i]);
+			if (!global.all_patients[i].lost)
+				ds_queue_enqueue(global.patients, global.all_patients[i]);
 			ds_queue_enqueue(global.scripts, "default_ask.txt");
 		}
 		global.selected_medications = []; //use all medications (med controller handles this)

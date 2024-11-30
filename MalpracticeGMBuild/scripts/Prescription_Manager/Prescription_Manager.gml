@@ -67,6 +67,7 @@ function PrescriptionManager()constructor{
 		{
 			show_debug_message("make box invis");
 			global.symptom_box.visible = false;
+			global.correct_prescriptions_given++;
 			//only prescibe medication if it treats patient
 			prescribe(global.current_patient.patient_id, _medication)
 			global.score += 100;
@@ -78,11 +79,23 @@ function PrescriptionManager()constructor{
 		}
 		else
 		{
+			global.current_patient.wrong_prescriptions++;
 			global.score -= 50;
-			show_debug_message(global.current_patient.name_first);
-			global.symptom_box.visible = true;
 			global.current_patient.image_index = 2;
-			global.textbox.dialogue.add("Does "+ _medication.medication_name + "\neven treat " + patient_symptom + "?\nMaybe I should\nsee someone else.");
+			show_debug_message(global.current_patient.name_first);
+			if (global.current_patient.wrong_prescriptions < 5)
+			{
+				global.symptom_box.visible = true;
+				global.textbox.dialogue.add("Does "+ _medication.medication_name + "\neven treat " + patient_symptom + "?\nMaybe I should\nsee someone else.");
+			}
+			else
+			{
+				global.current_patient.lost = true;
+				global.symptom_box.visible = false;
+				global.textbox.dialogue.add(_medication.medication_name + "?\nyou seem\nreally unconfident,\nI won't be coming\nback.");
+				global.current_patient.exiting_screen = true;
+				global.day_active = false;
+			}
 		}
 		//Allow the textbox to move to it's next dialogue
 		global.textbox.display_next_dialogue();

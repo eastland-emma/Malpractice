@@ -39,6 +39,8 @@
     {"$GMObjectProperty":"v1","%Name":"exiting_screen","filters":[],"listItems":[],"multiselect":false,"name":"exiting_screen","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"finished","filters":[],"listItems":[],"multiselect":false,"name":"finished","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
     {"$GMObjectProperty":"v1","%Name":"spawn_textbox","filters":[],"listItems":[],"multiselect":false,"name":"spawn_textbox","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"true","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"wrong_prescriptions","filters":[],"listItems":[],"multiselect":false,"name":"wrong_prescriptions","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"0","varType":0,},
+    {"$GMObjectProperty":"v1","%Name":"lost","filters":[],"listItems":[],"multiselect":false,"name":"lost","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
