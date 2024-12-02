@@ -4,22 +4,22 @@
   "bboxMode":2,
   "bbox_bottom":147,
   "bbox_left":26,
-  "bbox_right":102,
-  "bbox_top":42,
+  "bbox_right":105,
+  "bbox_top":62,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"348ebf67-f17f-4da2-947c-33625eb898fb","name":"348ebf67-f17f-4da2-947c-33625eb898fb","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"13e793b0-1018-462a-8bcd-d8ca3f0548a7","name":"13e793b0-1018-462a-8bcd-d8ca3f0548a7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":150,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"fc9d181a-7ed8-4ce0-9a8a-ed88c39aefc2","blendMode":0,"displayName":"default","isLocked":false,"name":"fc9d181a-7ed8-4ce0-9a8a-ed88c39aefc2","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"537ba35e-94a9-45bc-8f52-e563620116ea","blendMode":0,"displayName":"default","isLocked":false,"name":"537ba35e-94a9-45bc-8f52-e563620116ea","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_ligandrol",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"348ebf67-f17f-4da2-947c-33625eb898fb","path":"sprites/spr_ligandrol/spr_ligandrol.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"18484c17-833f-49dc-a77e-914a9df3f4ec","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"13e793b0-1018-462a-8bcd-d8ca3f0548a7","path":"sprites/spr_ligandrol/spr_ligandrol.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"7941bbc0-3601-42a1-9381-9ccdc28d640f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

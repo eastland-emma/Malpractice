@@ -3,8 +3,8 @@
   "%Name":"spr_acetazolamide",
   "bboxMode":2,
   "bbox_bottom":149,
-  "bbox_left":35,
-  "bbox_right":101,
+  "bbox_left":34,
+  "bbox_right":100,
   "bbox_top":63,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"af8c2df3-ea8e-4063-846d-32b602071581","name":"af8c2df3-ea8e-4063-846d-32b602071581","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"5477e210-6e19-483f-b17b-a3f7123618c8","name":"5477e210-6e19-483f-b17b-a3f7123618c8","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":150,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"eb6f0216-783d-4ded-937d-db33185ac325","blendMode":0,"displayName":"default","isLocked":false,"name":"eb6f0216-783d-4ded-937d-db33185ac325","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"dc5c7789-43c7-4ffc-80df-0c9d0ea9c99f","blendMode":0,"displayName":"default","isLocked":false,"name":"dc5c7789-43c7-4ffc-80df-0c9d0ea9c99f","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_acetazolamide",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"af8c2df3-ea8e-4063-846d-32b602071581","path":"sprites/spr_acetazolamide/spr_acetazolamide.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a66c21a0-d8ed-49fd-8b44-7ffdbec414b8","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5477e210-6e19-483f-b17b-a3f7123618c8","path":"sprites/spr_acetazolamide/spr_acetazolamide.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"3f2248b1-daeb-4b4c-957b-20ba751ce423","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
