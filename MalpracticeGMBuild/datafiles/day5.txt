@@ -1,3 +1,3 @@
-nadia_3.txt gretsch_default.txt max_default.txt aria_default.txt 
+nadia_3.txt gretsch_default.txt max_2.txt aria_default.txt 
 0 2 3 1
 Escitalopram Doxycycline Loperamide Lithium Acetazolamide Ligandrol Meclizine Cetirizine Alprazolam Enobosarm Loratadine Methandrostenolone Atorvastatin Modafinil Lorazepam Ondansetron TestosteroneCypionate  Montelukast Pilocarpine Sumatriptan Propranolol Doxepin 

@@ -1,3 +1,3 @@
-max_finish.txt filmore_default.txt gretsch_finish.txt 
+max_final.txt filmore_default.txt gretsch_final.txt 
 3 4 2
 Escitalopram Doxycycline Loperamide Lithium Acetazolamide Ligandrol Meclizine Cetirizine Alprazolam Enobosarm Loratadine Methandrostenolone Atorvastatin Modafinil Lorazepam Ondansetron TestosteroneCypionate  Montelukast Pilocarpine Sumatriptan Propranolol Doxepin 
