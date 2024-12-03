@@ -43,7 +43,8 @@ function PrescriptionManager()constructor{
 		{
 			global.current_patient.image_index = 0;
 			_patient_obj.current_symptom = _med.causes_symptoms[irandom(array_length(_med.causes_symptoms)-1)];
-			global.textbox.dialogue.add(_med.medication_name + ", huh?\nI guess I'll give it\na try.");
+			if(_med.medication_name != "Cure All")
+				global.textbox.dialogue.add(_med.medication_name + ", huh?\nI guess I'll give it\na try.");
 		}
 		else
 		{
@@ -59,7 +60,10 @@ function PrescriptionManager()constructor{
 	function attempt_prescribe(_medication)
 	{
 		patient_symptom = global.current_patient.current_symptom;
-		treats = array_contains(_medication.treats_symptoms, patient_symptom);
+		if(_medication.medication_name != "Cure All")
+			treats = array_contains(_medication.treats_symptoms, patient_symptom);
+		else
+			treats = true;
 		show_debug_message(global.current_patient.patient_id);
 		global.textbox.dialogue.clear(); //we're about to give the character new text that needs to be seen, if
 		// if the player hasn't finished the dialouge yet, remove it so new dialouge can be seen
@@ -74,7 +78,10 @@ function PrescriptionManager()constructor{
 			global.score += 100;
 			global.current_patient.image_index = 0;
 			global.current_patient.current_symptom = _medication.causes_symptoms[irandom(array_length(_medication.causes_symptoms)-1)];
-			global.textbox.dialogue.add(_medication.medication_name + ", huh?\nI guess I'll give it\na try.");
+			if(_medication.medication_name != "Cure All")
+			{
+				global.textbox.dialogue.add(_medication.medication_name + ", huh?\nI guess I'll give it\na try.");
+			}
 			global.current_patient.exiting_screen = true;
 			global.day_active = false;
 		}

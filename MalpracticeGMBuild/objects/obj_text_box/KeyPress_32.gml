@@ -22,4 +22,9 @@ if (dialogue.count() > 0){
 }
 else{
 	make_invisible();
+	if(_was_final_script)
+	{
+		_was_final_script = false;
+		global.current_patient.leave_pharmacy();
+	}
 }

@@ -50,6 +50,14 @@ function load_new_script(_filename, characterID)
 				global.symptom = _word;
 				show_debug_message("reveal set to " + string(i));
 			}
+			//Check for end of game
+			if(string_char_at(_word, 0) == "$")
+			{
+				_was_final_script = true;
+				patient_final_num = string_digits(string_char_at(_word, 2));
+				_word = "";
+				show_debug_message("Detected final script:"+string(patient_final_num));
+			}
 			if(string_length(_word) + _line_count > max_line_size)
 			{
 				_printable_text += "\n";

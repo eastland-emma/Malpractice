@@ -32,6 +32,8 @@
   "physicsStartAwake":true,
   "properties":[
     {"$GMObjectProperty":"v1","%Name":"max_line_size","filters":[],"listItems":[],"multiselect":false,"name":"max_line_size","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"20","varType":1,},
+    {"$GMObjectProperty":"v1","%Name":"_was_final_script","filters":[],"listItems":[],"multiselect":false,"name":"_was_final_script","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"False","varType":3,},
+    {"$GMObjectProperty":"v1","%Name":"patient_final_num","filters":[],"listItems":[],"multiselect":false,"name":"patient_final_num","rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"resourceType":"GMObjectProperty","resourceVersion":"2.0","value":"-1","varType":1,},
   ],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
