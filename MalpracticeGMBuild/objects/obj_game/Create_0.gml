@@ -146,5 +146,24 @@ function prep_day()
 	global.textbox.load_new_script(ds_queue_dequeue(global.scripts), global.current_patient.patient_id);
 }
 
+function play_patient_audio()
+{
+	switch(global.current_patient.patient_id)
+	{
+		case 0:
+			break;
+		case 1:
+			audio_play_sound(snd_aria_arrive, 1,false);
+			break;
+		case 2:
+			audio_play_sound(snd_gretsch_arrive, 1,false);
+			break;
+		case 3:
+			audio_play_sound(snd_max_arrive, 1,false);
+			break;
+		default:
+			break;	
+	}
+}
 prep_day();
 //instance_create_depth(400, 100, 0, obj_results_box)  //for testing
