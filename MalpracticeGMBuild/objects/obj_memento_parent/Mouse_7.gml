@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+if(!visible)
+	return;
 global.memento_screen.old_memento_name = global.memento_screen.memento_name;
 global.memento_screen.memento_name = item_name;
 global.memento_screen.memento_desc = description;

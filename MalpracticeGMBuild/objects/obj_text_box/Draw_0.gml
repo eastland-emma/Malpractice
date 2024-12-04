@@ -15,7 +15,8 @@ else
 {
 	draw_text(x + 50, y + 80, current_dialogue);
 }
-	
+
+draw_text(x + 50, y + 550, "Strikes: " + string(global.current_patient.wrong_prescriptions) + "/5");
 
 
 
