@@ -146,6 +146,16 @@ function prep_day()
 		//Line 3 controlling meds that spawn
 		meds = string_split(strings[2], " ");
 		global.selected_medications = meds;
+		
+		if (ds_queue_size(global.patients) <= 0)
+		{
+			if(patients_lost >= 5)
+			{
+				finish_game();
+			}
+			global.day_num++;
+			prep_day();
+		}
 	}
 	catch(_exception)
 	{

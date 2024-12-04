@@ -51,7 +51,7 @@ function PrescriptionManager()constructor{
 			
 			global.current_patient.image_index = 2;
 			show_debug_message(string(global.current_patient.image_index));
-			global.textbox.dialogue.add("Does "+ _med.medication_name + "\neven treat "+previous_symptom+"?\nMaybe I should\nsee someone else.");
+			global.textbox.dialogue.add("Does "+ _med.medication_name + "\neven treat \n"+previous_symptom+"?\nMaybe I should\nsee someone else.");
 		}
 	}
 	
@@ -97,7 +97,7 @@ function PrescriptionManager()constructor{
 			if (global.current_patient.wrong_prescriptions < 5)
 			{
 				global.symptom_box.visible = true;
-				global.textbox.dialogue.add("Does "+ _medication.medication_name + "\neven treat " + patient_symptom + "?\nMaybe I should\nsee someone else.");
+				global.textbox.dialogue.add("Does "+ _medication.medication_name + "\neven treat\n" + patient_symptom + "?\nMaybe I should\nsee someone else.");
 			}
 			else
 			{
