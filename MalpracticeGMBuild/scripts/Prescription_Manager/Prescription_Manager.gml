@@ -59,6 +59,7 @@ function PrescriptionManager()constructor{
 	//otherwise the pateint will remark that is incorrect, and score will be adjusted.
 	function attempt_prescribe(_medication)
 	{
+		global.total_prescriptions_given ++;
 		patient_symptom = global.current_patient.current_symptom;
 		if(_medication.medication_name != "Cure All")
 			treats = array_contains(_medication.treats_symptoms, patient_symptom);
@@ -76,6 +77,7 @@ function PrescriptionManager()constructor{
 			//only prescibe medication if it treats patient
 			prescribe(global.current_patient.patient_id, _medication)
 			global.score += 100;
+			global.total_score += 100;
 			global.current_patient.image_index = 0;
 			global.current_patient.current_symptom = _medication.causes_symptoms[irandom(array_length(_medication.causes_symptoms)-1)];
 			if(_medication.medication_name != "Cure All")
@@ -89,6 +91,7 @@ function PrescriptionManager()constructor{
 		{
 			global.current_patient.wrong_prescriptions++;
 			global.score -= 50;
+			global.total_score -=50;
 			global.current_patient.image_index = 2;
 			show_debug_message(global.current_patient.name_first);
 			if (global.current_patient.wrong_prescriptions < 5)

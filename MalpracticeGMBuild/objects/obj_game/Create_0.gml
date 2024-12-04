@@ -6,7 +6,9 @@ global.selected_medications = [];
 global.all_medications = [obj_alprazolam,obj_cetirizine, obj_enobosarm,obj_escitalopram, obj_ligandrol,obj_loratadine, obj_lorazepam, obj_methandrostenolone, obj_modafinil,obj_montelukast,obj_propranolol,obj_testosterone_cypionate,obj_meclizine,obj_ondansetron,obj_acetazolamide,obj_atorvastatin,obj_doxepin,obj_doxycycline,obj_loperamide,obj_pilocarpine,obj_lithium, obj_sumatriptan, obj_cureall];//Add in more medications as they are made
 global.day_active = false; //True if player should be allowed to switch screens and prescribe medications
 global.start_day = false; //when start day is true, sends first patient out, then is automatically changed back to false.
+//Holds a single instance of each patient so they aren't constantly created and deleted
 global.all_patients = [];
+//Tracks number of days started
 global.day_num = 0;
 global.patients_seen = 0;
 global.prescriptions_given = 0;
@@ -16,7 +18,13 @@ global.medicine_lookups = 0;
 global.score = 0;
 global.display_score = false;
 global.correct_prescriptions_given = 0;
+//Holds a single instance of each character's memento item.
 global.patient_mementos = [];
+global.memento_screen = instance_create_depth(690,70,0,obj_memento_screen);
+//Used for the final end game screen
+global.total_score=0;
+global.total_prescriptions_given = 0;
+global.total_patients_seen = 0;
 
 //create all patient objects once at the start, use same objects for the whole game
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient0));
@@ -44,33 +52,33 @@ if(global.day_num == 0)
 function finish_day()
 {
 	show_debug_message("day complete");
+	var patients_lost =0;
 	//Check to see if all characters left
 	for(var i =0; i<array_length(global.all_patients);i++)
 	{
-		if(!global.all_patients[i].lost)
-			break;
-		else
-		{
-			if(i = 4)
-			{
-				finish_game();
-			}
-		}
-		
+		if(global.all_patients[i].lost)
+			patients_lost++;
 	}
-	//set up the next day
-	global.symptom_box.visible = false;
-	instance_create_depth(400, 100, 0, obj_results_box)
-	global.day_num += 1;
-	global.day_active = false;
-	global.display_score = false;
-	//play an animation or have a results screen showing day is complete and progress or something.
+	if(patients_lost >= 5)
+	{
+		finish_game();
+	}
+	else
+	{
+		//set up the next day
+		global.symptom_box.visible = false;
+		instance_create_depth(400, 100, 0, obj_results_box)
+		global.day_num += 1;
+		global.day_active = false;
+		global.display_score = false;
+		//play an animation or have a results screen showing day is complete and progress or something.
 	
-	//start the next day.
+		//start the next day.
 	 
-	prep_day(); 
+		prep_day(); 
 	
-	//global.start_day = true;
+		//global.start_day = true;
+	}
 }
 
 function prep_day()
@@ -164,6 +172,7 @@ function play_patient_audio()
 	switch(global.current_patient.patient_id)
 	{
 		case 0:
+			audio_play_sound(snd_nadia_arrive, 1,false);
 			break;
 		case 1:
 			audio_play_sound(snd_aria_arrive, 1,false);
@@ -174,12 +183,15 @@ function play_patient_audio()
 		case 3:
 			audio_play_sound(snd_max_arrive, 1,false);
 			break;
-		default:
+		case 4:
+			audio_play_sound(snd_filmore_arrive, 1,false);
 			break;	
 	}
 }
-function finish_day()
+function finish_game()
 {
+	instance_create_depth(15, 15, 0, obj_end_screen_);
+	
 }
 prep_day();
 //instance_create_depth(400, 100, 0, obj_results_box)  //for testing

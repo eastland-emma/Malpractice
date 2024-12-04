@@ -7,7 +7,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"patient_num","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"3",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"description","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"A bowing bar holding around a 1/4 ton of weight. Fit for a champion.\"",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Max's Winning Weights\"",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Max's\\n Winning Weights\"",},
   ],
   "parent":{
     "name":"Mementos",

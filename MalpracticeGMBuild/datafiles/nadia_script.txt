@@ -2,4 +2,4 @@ Nadia Bisnez: Are you in charge here?
 Nadia Bisnez: I need a prescription. Handle it. 
 Nadia Bisnez: I expect things to be handled quickly and without errors. Is that going to be an issue for you?
 You: No issue at all. I'll take care of it.
-Nadia Bisnez: Time is money, and I’m not in the business of wasting either. Please get me something for my *symptom .
+Nadia Bisnez: Time is money, and I'm not in the business of wasting either. Please get me something for my *symptom .

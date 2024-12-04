@@ -26,5 +26,6 @@ else{
 	{
 		_was_final_script = false;
 		global.current_patient.leave_pharmacy();
+		make_invisible();
 	}
 }

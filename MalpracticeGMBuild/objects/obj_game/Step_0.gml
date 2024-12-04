@@ -2,6 +2,7 @@
 // You can write your code in this editor
 if(global.start_day) //start the first patient walking out
 {
+	global.total_patients_seen++;
 	global.start_day = false;
 	global.current_patient.speed = 5;
 	global.current_patient.entering_screen = true;
@@ -21,6 +22,7 @@ if(global.current_patient.finished)
 		finish_day();
 	else
 	{
+		global.total_patients_seen ++;
 		//global.textbox.load_new_script(ds_queue_dequeue(global.scripts));
 		global.current_patient = ds_queue_dequeue(global.patients);
 		global.textbox.load_new_script(ds_queue_dequeue(global.scripts),global.current_patient.patient_id);

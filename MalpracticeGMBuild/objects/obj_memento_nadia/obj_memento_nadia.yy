@@ -9,7 +9,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"patient_num","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"0",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"description","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"A shelter bandana from Nadia's new job at the SPCA\"",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Nadia's Bandana\"",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Nadia's\\n Bandana\"",},
   ],
   "parent":{
     "name":"Mementos",

@@ -7,7 +7,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"patient_num","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"1",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"description","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"A sweatshirt from Aria's College of Dance in NYC\"",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Aria's Sweatshirt\"",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Aria's\\n Sweatshirt\"",},
   ],
   "parent":{
     "name":"Mementos",

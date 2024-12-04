@@ -9,7 +9,7 @@
   "overriddenProperties":[
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"patient_num","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"4",},
     {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"description","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"The award winning screen play that you appeared in. Tom Cruise won best supporting actor for playing you\"",},
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Filmore's Screenplay\"",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_memento_parent","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"propertyId":{"name":"item_name","path":"objects/obj_memento_parent/obj_memento_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"\"Filmore's\\n Screenplay\"",},
   ],
   "parent":{
     "name":"Mementos",

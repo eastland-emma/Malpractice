@@ -43,7 +43,7 @@
     ],
     "top":170,
   },
-  "origin":9,
+  "origin":0,
   "parent":{
     "name":"GUI",
     "path":"folders/Sprites/GUI.yy",
@@ -99,7 +99,7 @@
     "visibleRange":null,
     "volume":1.0,
     "xorigin":0,
-    "yorigin":15,
+    "yorigin":0,
   },
   "swatchColours":null,
   "swfPrecision":0.5,
