@@ -44,7 +44,20 @@ if(global.day_num == 0)
 function finish_day()
 {
 	show_debug_message("day complete");
-	
+	//Check to see if all characters left
+	for(var i =0; i<array_length(global.all_patients);i++)
+	{
+		if(!global.all_patients[i].lost)
+			break;
+		else
+		{
+			if(i = 4)
+			{
+				finish_game();
+			}
+		}
+		
+	}
 	//set up the next day
 	global.symptom_box.visible = false;
 	instance_create_depth(400, 100, 0, obj_results_box)
@@ -164,6 +177,9 @@ function play_patient_audio()
 		default:
 			break;	
 	}
+}
+function finish_day()
+{
 }
 prep_day();
 //instance_create_depth(400, 100, 0, obj_results_box)  //for testing

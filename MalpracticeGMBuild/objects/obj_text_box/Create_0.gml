@@ -22,6 +22,9 @@ function load_new_script(_filename, characterID)
 	case 3:
 		sprite_index = spr_textbox_max
 		break;
+	case 4:
+		sprite_index = spr_textbox_filmore;
+		break;
 	}
 	//clear dialouge
 	dialogue = new Dialogue();
