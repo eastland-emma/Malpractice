@@ -6,8 +6,9 @@ After you finish talking to a patient, you will be able to move to the medicine 
 +
 When you are in the medicine room, hover over a medication to receive basic information about the drug.
 If you'd like more explicit information regarding what a drug treats, click on the computer to get more information.
-Using the computer to research a drug takes time. For you, time is money. Looking up medicine reduces your score.  
-However, prescribing the wrong medicine is even worse! Use the computer when you want to know exactly what symptoms a medication treats.
+Using the computer to research a drug takes time. For you, time is money. Looking up medicine reduces your score.
+However, prescribing the wrong medicine is even worse! If you prescribe the wrong medication for a patient 5 times, they will leave your practice!
+Use the computer when you want to know exactly what symptoms a medication treats.
 If you leave the medicine room, any medication information you researched will be lost! You can always look it up again, but at the expense of your score.
 We'll head back to the lobby
 -
