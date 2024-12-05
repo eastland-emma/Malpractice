@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":10.296,
+  "duration":10.26381,
   "name":"snd_aria_arrive",
   "parent":{
     "name":"Sounds",
@@ -19,7 +19,7 @@
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_aria_arrive.mp3",
+  "soundFile":"snd_aria_arrive.wav",
   "type":0,
   "volume":1.0,
 }
