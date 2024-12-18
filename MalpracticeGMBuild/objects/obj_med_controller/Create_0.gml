@@ -1,8 +1,8 @@
-/// @description Insert description here
+/// @description Sets up the correct daily medications along with controlling spawn behavior and preparing to display medication information
 // You can write your code in this editor
 global.current_med = noone;
 global.med_info = {name: "Select medicine", 
-				   info: "Hover for more details, click the medication to prescribe."};
+				   info: "Hover for more details, click the medication to prescribe."};//This object pulls  the display data from this field
 prev_med_info = "start";
 current_description = "start";
 current_meds = []; //this is the list of medication objects that is actually going to be spawned.
@@ -64,5 +64,5 @@ function prep_medications()
 prep_medications()
 spawn_medications();
 
-
+//Inherits from text_parent. Contains necessary scrolling text functions
 event_inherited();

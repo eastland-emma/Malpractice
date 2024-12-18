@@ -1,18 +1,17 @@
-/// @description Insert description here
+/// @description Either autocomplete if text is scrolling, or move on to the next dialogue
 audio_play_sound(snd_mouse_click,0,false);
-//Check if we need to move rooms
+
 if (scrolling)
 {
-	//show_debug_message("scrolling set false in textbox");
 	scrolling = false;
 	return;
 }
+//If tutorial not completed, show next dialogue
 if (dialogue.count() > 0){
-	show_debug_message("scrolling set true in textbox");
 	display_next_dialogue();
 	scrolling = true;
 }
-else
+else//otherwise set up for the first day 
 {
 	global.start_day = true;
 	global.display_score = true;

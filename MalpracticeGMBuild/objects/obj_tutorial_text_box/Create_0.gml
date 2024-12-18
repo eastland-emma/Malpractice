@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Create textbox and load tutorial script
 // You can write your code in this editor
 persistent = true;
 
@@ -6,8 +6,11 @@ persistent = true;
 event_inherited();//Text scrolling stuff
 current_dialogue = "";
 dialogue = new Dialogue();
+//Spawn position
 x = 60;
 y = 60;
+
+///@description Loads a new script and formats it to fit the tutorial textbox
 load_new_script = function(_filename)
 {
 	//Load file
@@ -42,7 +45,10 @@ load_new_script = function(_filename)
 	}
 	current_dialogue = dialogue.pop();
 }
+
 load_new_script("tutorial.txt"); 
+
+///@description tutorial function that pulls the next dialogue from the top of the dialogue queue and interprets some flags
 display_next_dialogue = function()
 {
 	visible = true;
@@ -60,7 +66,7 @@ display_next_dialogue = function()
 
 
 
-
+///@description handles movement between front and backroom for seamless navigation in tutorial
 handle_tutorial_move = function(_direction_of_move)
 {
 	if(_direction_of_move >= 1)

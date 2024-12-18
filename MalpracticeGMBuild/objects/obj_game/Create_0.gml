@@ -1,30 +1,43 @@
-/// @description Insert description here
+/// @description Prepare the backend of the game to run
+
+//Define a default script to avoid complications
 global.script_name = "nadia_script.txt";
 // Create a prescription manager to track everyones current and past prescriptions
 global.prescription_manager = new PrescriptionManager();
 global.selected_medications = [];
-global.all_medications = [obj_alprazolam,obj_cetirizine, obj_enobosarm,obj_escitalopram, obj_ligandrol,obj_loratadine, obj_lorazepam, obj_methandrostenolone, obj_modafinil,obj_montelukast,obj_propranolol,obj_testosterone_cypionate,obj_meclizine,obj_ondansetron,obj_acetazolamide,obj_atorvastatin,obj_doxepin,obj_doxycycline,obj_loperamide,obj_pilocarpine,obj_lithium, obj_sumatriptan, obj_cureall];//Add in more medications as they are made
-global.day_active = false; //True if player should be allowed to switch screens and prescribe medications
-global.start_day = false; //when start day is true, sends first patient out, then is automatically changed back to false.
+//Make a master list of all valid medications here
+global.all_medications = [obj_alprazolam,obj_cetirizine, obj_enobosarm,obj_escitalopram, obj_ligandrol,obj_loratadine, obj_lorazepam, obj_methandrostenolone, obj_modafinil,obj_montelukast,obj_propranolol,obj_testosterone_cypionate,obj_meclizine,obj_ondansetron,obj_acetazolamide,obj_atorvastatin,obj_doxepin,obj_doxycycline,obj_loperamide,obj_pilocarpine,obj_lithium, obj_sumatriptan, obj_cureall];
+
+
+//True if player should be allowed to switch screens and prescribe medications
+global.day_active = false; 
+//when start day is true, sends first patient out, then is automatically changed back to false.
+global.start_day = false;
+
 //Holds a single instance of each patient so they aren't constantly created and deleted
 global.all_patients = [];
+
 //Tracks number of days started
 global.day_num = 0;
+//Keep track of game data to calculate a daily score
 global.patients_seen = 0;
 global.prescriptions_given = 0;
-global.symptom = "none";
-global.symptom_box = instance_create_depth(400, 900, 0, obj_symptom_box);
 global.medicine_lookups = 0;
 global.score = 0;
 global.display_score = false;
 global.correct_prescriptions_given = 0;
-//Holds a single instance of each character's memento item.
-global.patient_mementos = [];
-global.memento_screen = instance_create_depth(690,70,0,obj_memento_screen);
 //Used for the final end game screen
 global.total_score=0;
 global.total_prescriptions_given = 0;
 global.total_patients_seen = 0;
+
+//Keep track of the character's symptom and create a box to display when needed
+global.symptom = "none";
+global.symptom_box = instance_create_depth(400, 900, 0, obj_symptom_box);
+//Holds a single instance of each character's memento item.
+global.patient_mementos = [];
+global.memento_screen = instance_create_depth(690,70,0,obj_memento_screen);
+
 
 //create all patient objects once at the start, use same objects for the whole game
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient0));
@@ -33,22 +46,25 @@ array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient3));
 array_push(global.all_patients,instance_create_depth(-400, 800, 100, obj_patient4));
 
+//create mementos before the game begins
 array_push(global.patient_mementos,instance_create_depth(150, 875, -100, obj_memento_nadia));
 array_push(global.patient_mementos,instance_create_depth(450, 875, -100, obj_memento_aria));
 array_push(global.patient_mementos,instance_create_depth(750, 875, -100, obj_memento_gretsch));
 array_push(global.patient_mementos,instance_create_depth(1050, 875, -100, obj_memento_max));
 array_push(global.patient_mementos,instance_create_depth(1350, 875, -100, obj_memento_filmore));
 
+//create the characters textbox (hidden until the first patient arrives)
 global.textbox = instance_create_depth(0,0,0, obj_text_box);
 global.textbox.make_invisible();
 
-
+//Spawn and start tutorial if needed
 if(global.day_num == 0)
 {
 	instance_create_depth(920, 540, 0, obj_tutorial_text_box);
 	global.start_day = false;
 }
 
+///@description 
 function finish_day()
 {
 	show_debug_message("day complete");
